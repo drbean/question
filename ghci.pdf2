@@ -1,0 +1,13 @@
+import PGF2
+gr <- readPGF "Food.pgf"
+let Just eng = Data.Map.lookup "FoodEng" (languages gr)
+let Just item = readType "Item"
+let res = parse  eng (startCat gr) "wine"
+let ParseOk ((x,y):rest) = res
+let ParseOk ((e,p):rest) = parse eng (startCat gr) "this very very very very boring wine is delicious"
+let Just w = readExpr "Wine"
+let Just c = readExpr "Cheese"
+let Just b = readExpr "Boring"
+let Just bed = readExpr "Bored"
+let bw = mkApp "Mod" [b,w]
+let tbw = mkApp "This" [bw]
