@@ -9,7 +9,7 @@ import qualified Data.Map as Map
 import Data.DRS
 
 import PGF2
-mport Communication
+import Summer
 import Utility
 import Model
 
@@ -39,7 +39,7 @@ trans = id
 
 run f tests = do
   gr' <- gr
-  let Just eng = Map.lookup "TriggerEng" (languages gr')
+  let Just eng = Map.lookup "SummerEng" (languages gr')
   let ss = map (chomp . lc_first) tests
   let p =  parse eng (startCat gr')
   let Just incompleteparse = readExpr "ParseIncomplete"
@@ -111,7 +111,7 @@ dic_test = [
 	, "Wonda is a telephone marketer."
 	, "Wonda is one of those people who drive you crazy by trying to sell you things over the phone."
 	, "Wonda has a lot of fun when she is not making calls."
-	, "It's really easy since she just has to read from a script."
+	, "It is really easy since she just has to read from a script."
 	, "Wonda works full-time from two in the afternoon until eleven at night."
 
 
