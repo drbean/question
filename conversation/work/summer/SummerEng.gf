@@ -14,7 +14,6 @@ lin
 	much	= ParadigmsEng.mkAdA "much";
 	just	= ParadigmsEng.mkAdV "just";
 	full_time	= ParadigmsEng.mkAdv "full-time";
-	around	= ParadigmsEng.mkAdv "around";
 	also	= ParadigmsEng.mkAdV "also";
 	again	= ParadigmsEng.mkAdv "again";
 
@@ -86,12 +85,13 @@ lin
 
 	to_RECIPIENTPREP	= mkPrep "to";
 	with_COAGENTPREP	= mkPrep "with";
-	around_LOCPREP	= mkPrep "around";
+	around_PREP	= mkPrep "around";
 	until_TIMEPREP	= mkPrep "until";
 	over_MANNERPREP	= mkPrep "over";
 	on_THEMEPREP	= mkPrep "on";
 	as_ATTRIBUTEPREP	= mkPrep "as";
 	into_STIMULUSPREP	= mkPrep "into";
+	in_TIMEPREP	= mkPrep "in";
 	in_MANNERPREP	= mkPrep "in";
 	in_LOCPREP	= mkPrep "in";
 	from_TIMEPREP	= mkPrep "from";
@@ -114,7 +114,7 @@ lin
 
 	work	= mkV "work";
 	wash	= mkV2( mkV "wash") noPrep;
-	walk	= mkV2( mkV "walk") around_LOCPREP;
+	walk	= mkV2( mkV "walk") around_PREP;
 	try	= mkVV( mkV "try") ;
 	take	= mkV2 IrregEng.take_V noPrep;
 	think	= mkVS( mkV "think") ;

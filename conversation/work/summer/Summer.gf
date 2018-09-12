@@ -12,7 +12,6 @@ fun
 	much	: AdA;
 	just	: AdV;
 	full_time	: Adv_manner;
-	around	: Adv_location;
 	also	: AdV;
 	again	: Adv_time;
 
@@ -67,7 +66,7 @@ fun
 	chef	: CN;
 	cartoon_character	: CN;
 	call_CN	: CN;
-	amusement_park	: PlaceNoun;
+	amusement_park	: CN;
 	afternoon	: CN;
 	adult	: CN;
 	activity	: CN;
@@ -84,12 +83,13 @@ fun
 
 	to_RECIPIENTPREP	: RecipientPrep;
 	with_COAGENTPREP	: CoagentPrep;
-	around_LOCPREP	: LocPrep;
+	around_PREP	: Prep;
 	until_TIMEPREP	: TimePrep;
 	over_MANNERPREP	: MannerPrep;
 	on_THEMEPREP	: ThemePrep;
 	as_ATTRIBUTEPREP	: AttributePrep;
 	into_STIMULUSPREP	: StimulusPrep;
+	in_TIMEPREP	: TimePrep;
 	in_MANNERPREP	: MannerPrep;
 	in_LOCPREP	: LocPrep;
 	from_TIMEPREP	: TimePrep;
