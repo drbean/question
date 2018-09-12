@@ -808,7 +808,6 @@ lin
 	VP_NP_AP vp np = PastPartAgentAP vp np;
 
   about_PREP	= P.mkPrep "about";
-  at_PREP	= P.mkPrep "at";
 	before_PREP	= P.mkPrep "before";
   from_PREP	= P.mkPrep "from";
 	of_PREP	= possess_Prep;
