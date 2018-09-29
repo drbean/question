@@ -1,4 +1,4 @@
-module Evaluation (readPGF, languages, buildMorpho, morphoMissing, leading_space, chomp, lc_first, term2ref, drsRefs, xyzwp, var_e, unmaybe, rep, parses, drsToLF, linear, showExpr, transform) where
+module Evaluation (readPGF, languages, buildMorpho, morphoMissing, term2ref, drsRefs, xyzwp, var_e, unmaybe, rep, parses, drsToLF, linear, showExpr, transform) where
 
 import PGF2
 import Data.DRS hiding (Or,Neg,Imp,Rel)
@@ -162,21 +162,6 @@ linear :: PGF -> Tree -> Maybe String
 linear gr p = Just (linearize gr (myLanguage gr) p)
 
 myLanguage gr = (head . languages) gr
-
-chomp :: String -> String
-chomp []                      = []
--- chomp ('\'':'s':xs)           = " 's" ++ chomp xs
--- chomp ('s':'\'':xs)           = "s 's" ++ chomp xs
-chomp ('s': 'o': 'm': 'e': 'o': 'n': 'e': xs) = " some &+ one " ++ chomp xs
--- chomp ('e': 'v': 'e': 'r': 'y': 't': 'h': 'i': 'n': 'g': xs) = " every &+ thing " ++ chomp xs
-chomp('\x2019': xs) = "'" ++ chomp xs
-chomp (' ': 'i': 't': '\'': 's': ' ': xs)	= " it is " ++ chomp xs
-chomp (' ': ',': ' ': xs) = " , " ++ chomp xs
-chomp ('1': ',': '0': xs) = "1,0" ++ chomp xs
-chomp ('1': ',': '8': xs) = "1,8" ++ chomp xs
-chomp (x:xs) | x `elem` ".,?？" = chomp xs
-            | otherwise      =     x:chomp xs
-
 
 
 -- vim: set ts=2 sts=2 sw=2 noet:
