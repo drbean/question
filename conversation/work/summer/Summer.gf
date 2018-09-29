@@ -46,6 +46,7 @@ fun
 	restaurant	: CN;
 	problem	: CN;
 	phone	: CN;
+	money	: N;
 	meat	: N;
 	marketing	: N;
 	marketer	: CN;

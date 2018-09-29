@@ -97,7 +97,7 @@ dic_test = [
   , "Tracy will show interesting games and educational activities to young kids."
   , "She will also walk around the amusement park in a costume as a cartoon character."
 	, "Mark can get a landscaping job again."
-	, "A landscaper earns more than an intern answering phones."
+	, "A landscaper earns more money than an intern answering phones."
 	, "Carlos is working as a tutor in a learning center for kids."
 	, "Carlos has to help the kids get started on their computers."
 	, "Carlos also has to be tehere when they run into problems."

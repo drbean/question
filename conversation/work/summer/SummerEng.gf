@@ -48,6 +48,7 @@ lin
 	restaurant	= mkCN( mkN nonhuman (mkN "restaurant") );
 	problem	= mkCN( mkN nonhuman (mkN "problem") );
 	phone	= mkCN( mkN nonhuman (mkN "phone") );
+	money	= mkN "money" nonExist;
 	meat	= mkN "meat" nonExist;
 	marketing	= mkN "marketing" nonExist;
 	marketer	= mkCN( mkN human (mkN "marketer") );

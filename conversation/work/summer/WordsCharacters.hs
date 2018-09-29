@@ -187,6 +187,7 @@ Mark	: PN;
 marketer	: CN;
 marketing	: N;
 meat	: N;
+money	: N;
 more
 much	: AdA;
 at night	: Adv_time;
