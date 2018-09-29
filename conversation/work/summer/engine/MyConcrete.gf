@@ -421,11 +421,11 @@ oper
 		a = np.a
 		} ;
 
-	myCAdvCNNP : (cadv : CAdv) -> ( cn : CN ) -> ( np : NP ) -> { s : Number => Case => Str ; g : Gender } =
-	\cadv,cn,np ->
+	myCAdvNNP : (cadv : CAdv) -> ( n : N ) -> ( np : NP ) -> { s : Number => Case => Str ; g : Gender } =
+	\cadv,n,np ->
 		{
-		s = \\n,c => cadv.s ! Pos ++ cn.s ! n ! c ++ cadv.p ++ np.s ! npNom;
-		g = cn.g};
+		s = \\_,_ => cadv.s ! Pos ++ n.s ! Sg ! Nom ++ cadv.p ++ np.s ! npNom;
+		g = n.g};
 
 	myVPPlus : (vp : VP) -> (str : Str) -> {
 	  s   : VerbForms;
@@ -794,7 +794,7 @@ lin
 	more	= more_CAdv;
 	ComparaAP a np = mkAP a np;
 	ComparaAdv cadv a np = mkAdv cadv a np;
-	ComparaN cadv cn np = mkNP ( myCAdvCNNP cadv cn np);
+	ComparaN cadv n np = mkNP ( myCAdvNNP cadv n np);
 	ComparaS a s = mkAP a s;
 	AdjModified	a s = mkAP a s;
 	As_as ap np	= mkAP as_CAdv ap np;
