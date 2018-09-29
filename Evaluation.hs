@@ -163,11 +163,6 @@ linear gr p = Just (linearize gr (myLanguage gr) p)
 
 myLanguage gr = (head . languages) gr
 
-leading_space :: String -> String
-leading_space (' ': xs) = leading_space xs
-leading_space ('\t': xs) = leading_space xs
-leading_space xs = xs
-
 chomp :: String -> String
 chomp []                      = []
 -- chomp ('\'':'s':xs)           = " 's" ++ chomp xs

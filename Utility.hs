@@ -23,3 +23,10 @@ chomp ('1': ',': '0': xs) = "1,0" ++ chomp xs
 chomp ('1': ',': '8': xs) = "1,8" ++ chomp xs
 chomp (x:xs) | x `elem` ".,?？" = chomp xs
             | otherwise      =     x:chomp xs
+
+leading_space :: String -> String
+leading_space (' ': xs) = leading_space xs
+leading_space ('\t': xs) = leading_space xs
+leading_space xs = xs
+
+
