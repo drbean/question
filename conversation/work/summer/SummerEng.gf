@@ -118,7 +118,7 @@ lin
 	walk	= mkV2( mkV "walk") around_PREP;
 	try	= mkVV( mkV "try") ;
 	take	= mkV2 IrregEng.take_V noPrep;
-	think	= mkVS( mkV "think") ;
+	think	= mkVS IrregEng.think_V ;
 	show_to	= mkV3( mkV "show") noPrep to_RECIPIENTPREP;
 	show	= mkV3( mkV "show") noPrep noPrep;
 	sell	= mkV3( mkV "sell") noPrep noPrep;
