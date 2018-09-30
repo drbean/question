@@ -30,13 +30,6 @@ isDummy _ = False
 int2ref :: Int -> DRSRef
 int2ref n = DRSRef ("r" ++ show n )
 
-lc_first :: String -> String
-lc_first str@(s:ss) = if any (flip isPrefixOf str) [
-	"Mnookin"
-	 ]
-	then s:ss
-	else toLower s:ss
-
 instance Eq GPN where
 	(==) _ _ = False
 
