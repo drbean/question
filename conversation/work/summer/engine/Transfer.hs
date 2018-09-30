@@ -1,8 +1,10 @@
 module Main where
 
+import PGF2
 import Summer
+import Utility (lc_first, chomp, leading_space, be_morphology)
 import LogicalForm hiding ((==))
-import Evaluation
+-- import Evaluation
 
 --import Model
 import WordsCharacters
@@ -11,6 +13,7 @@ import Data.Maybe
 import Control.Monad
 import Data.List.Split
 import Data.List
+import qualified Data.Map as Map
 
 import GHC.IO.Handle
 import System.IO
@@ -21,26 +24,33 @@ main :: IO ()
 main = do
 	path <- getProgPath
 	gr <- readPGF ( path ++ "/Summer.pgf" )
-	let lang = languages gr
-	let morpho = buildMorpho gr $ head lang
+	let Just eng = Map.lookup "SummerEng" (languages gr)
+	let morpho = map fst (fullFormLexicon eng) ++ be_morphology
 	hClose stderr
 	hDuplicateTo stdout stderr
 	s <- getLine
-	let s' = leading_space s
-	let l = (chomp . lc_first) s'
-	let unknown = unwords (morphoMissing morpho (words l))
+	let l = (chomp . lc_first . leading_space) s
+	let unknown = unwords (filter (flip notElem morpho) (words l))
 	putStrLn ("Unknown_words: " ++ unknown )
-	let ps = parses gr l
-	let ls = map (linear gr <=< transform) ps
-	putStrLn ("Parsed: " ++ show (map (showExpr []) ps ) )
-	let urs = map (unmaybe . rep) ps
+	let ps =  parse eng (startCat gr) l
+	let Just incompleteparse = readExpr "ParseIncomplete"
+	let Just noaccountfail = readExpr "ParseFailed somewhere"
+	let failingparse n string = fromMaybe noaccountfail (readExpr ("ParseFailed at " ++ (show n) ++ " " ++ string))
+	let t ps = case ps of
+		ParseOk ((e,prob):rest) -> e
+		(ParseFailed offset token) -> failingparse offset token
+		ParseIncomplete -> incompleteparse
+	-- let ls = map (linear gr <=< transform) ps
+	let p = t ps
+	putStrLn ("Parsed: " ++ show p )
+	-- let urs = map (unmaybe . rep) ps
 	-- let reps = map (\ur -> ur (term2ref drsRefs var_e)) urs
 	-- putStrLn ("Representation: " ++ show reps )
 	-- let lfs = map (\ur -> drsToLF (ur (term2ref drsRefs var_e))) urs
 	-- putStrLn ("LF: " ++ show lfs )
 	putStrLn ("Answer: No answer" )
-	let courses = map (label . fg) ps
-	putStrLn ("Course: " ++ foldl takeCourse "Unparseable" courses )
+	let course = (label . fg) p
+	putStrLn ("Course: " ++ course )
 
 label :: GUtt -> String
 label (GQUt (GMkQS GpresentTense GsimultaneousAnt GpositivePol (GWH_Pred _ _)))	= "WH"
