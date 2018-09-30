@@ -29,4 +29,5 @@ leading_space (' ': xs) = leading_space xs
 leading_space ('\t': xs) = leading_space xs
 leading_space xs = xs
 
-
+be_morphology :: [String]
+be_morphology = ["are", "is", "were", "was", "been", "being"]
