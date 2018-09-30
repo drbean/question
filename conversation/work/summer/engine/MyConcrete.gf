@@ -820,6 +820,9 @@ lin
 	can	= can_VV;
 	would	= ModalVV "would" "wouldn't" "would not";
 	should	= ModalVV "should" "shouldn't" "should not";
+	be	= mk5V "are" "is" "was" "been" "being";
+	be_plus	= mk5V "are" "is" "were" "been" "being";
+	do	= IrregEng.do_V;
 	have	= P.mkV2 IrregEng.have_V;
 	know_V2	= P.mkV2 know_V;
 	know_VS	= P.mkVS know_V;

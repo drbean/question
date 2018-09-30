@@ -370,6 +370,9 @@ fun
 	can	: VV;
 	would	: VV;
 	should	: VV;
+	be	: V;
+	be_plus	: V;
+	do	: V;
 	have	: V2;
 	know_V2	: V2;
 	know_VS	: VS;
