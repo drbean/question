@@ -93,7 +93,20 @@ fol tests = do
 
 dic_test = [
 
-	"Tracy is working at an amusement park."
+  "Tyler has a summer job."
+	, "Tyler is working at a beach resort."
+	, "Emma has a couple of leads."
+	, "One job is as an intern for a news website."
+	, "An intern answers emails and posts from readers."
+	, "Emma can get a job as a camp counselor again."
+	, "Tyler thinks being an intern is much more challenging than working at a summer camp."
+	, "Tyler says Emma could earn college credits."
+	, "Tyler thinks being an intern is not as much work."
+	, "The internship doesn't pay as much money as the summer camp job."
+	, "Emma asks if there is another opening at the beach resort."
+	, "Working at the beach resort is the kind of job that Emma would really enjoy."
+
+	, "Tracy is working at an amusement park."
   , "Tracy will show interesting games and educational activities to young kids."
   , "She will also walk around the amusement park in a costume as a cartoon character."
 	, "Mark can get a landscaping job again."
