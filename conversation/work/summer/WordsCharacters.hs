@@ -188,7 +188,7 @@ marketer	: CN;
 marketing	: N;
 meat	: N;
 money	: N;
-more
+much more	: Adv;
 much	: AdA;
 at night	: Adv_time;
 not
@@ -243,6 +243,58 @@ work	: V;
 you
 young	: AP;
 
+-- 5th edition
+
+again	: Adv;
+and	: Conj;
+another	: Det;
+answer	: V2;
+as
+ask	: V2S;
+at_LOCPREP	: LocPrep;
+beach resort	: CN;
+being
+camp counselor	: CN;
+challenging	: AP;
+college credits	: CN;
+could	: VV;
+a couple of	: Det;
+earn	: V2;
+email	: CN;
+Emma	: PN;
+enjoy	: V2;
+for_BENEFICIARYPREP	: BeneficiaryPrep;
+for
+from_SOURCEPREP	: SourcePrep;
+from_TIMEPREP	: TimePrep;
+from
+get	: V2;
+get	: VV;
+get	: VA;
+get
+intern	: CN;
+internship	: CN;
+job	: CN;
+job
+kind	: CN;
+lead	: CN;
+more
+much
+news website	: CN;
+one of	: Predet;
+opening	: CN;
+pay	: V2;
+post	: CN;
+reader	: CN;
+really	: AdA;
+say	: VS;
+summer camp	: CN;
+summer job	: CN;
+than
+think	: VS;
+Tyler	: PN;
+work	: N;
+would	: VV;
 -}
 
 -- vim: set ts=2 sts=2 sw=2 noet:
