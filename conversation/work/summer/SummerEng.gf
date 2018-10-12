@@ -9,6 +9,7 @@ lin
 
 -- Adv
 
+	much_more	= ParadigmsEng.mkCAdv "much more" "not much more" "than";
 	really	= ParadigmsEng.mkAdA "really";
 	at_night	= ParadigmsEng.mkAdv "at night";
 	much	= ParadigmsEng.mkAdA "much";
@@ -19,6 +20,7 @@ lin
 
 -- AP
 
+	challenging	=  mkA "challenging" ;
 	young	= mkAP( mkA "young") ;
 	started	= mkAP( mkA "started") ;
 	own	= mkAP( mkA "own") ;
@@ -30,9 +32,13 @@ lin
 
 -- Conj
 
+	and	= mkConj "and";
 
 -- Det
 
+	one_of	= ss "one of";
+	a_couple_of	= mkDet( ParadigmsEng.mkQuant nonExist "a couple of") pluralNum;
+	another	= mkDet( ParadigmsEng.mkQuant "another" nonExist) singularNum;
 	two	= mkDet( mkCard (mkNumeral n2_Unit));
 	one	= mkDet( mkCard (mkNumeral n1_Unit));
 	a_lot_of	= ss "a lot of";
@@ -41,6 +47,21 @@ lin
 
 -- N
 
+	summer_job	= mkCN( mkN nonhuman (mkN "summer job") );
+	work_N	= mkN "work" nonExist;
+	summer_camp	= mkCN( mkN nonhuman (mkN "summer camp") );
+	reader	= mkCN( mkN human (mkN "reader") );
+	post	= mkCN( mkN nonhuman (mkN "post") );
+	opening	= mkCN( mkN nonhuman (mkN "opening") );
+	news_website	= mkCN( mkN nonhuman (mkN "news website") );
+	lead	= mkCN( mkN nonhuman (mkN "lead") );
+	kind	= mkCN( mkN nonhuman (mkN "kind") );
+	internship	= mkCN( mkN nonhuman (mkN "internship") );
+	intern	= mkCN( mkN human (mkN "intern") );
+	email	= mkCN( mkN nonhuman (mkN "email") );
+	college_credits	= mkCN( mkN nonhuman (mkN nonExist "college credits") );
+	camp_counselor	= mkCN( mkN human (mkN "camp counselor") );
+	beach_resort	= mkCN( mkN nonhuman (mkN "beach resort") );
 	vegetable	= mkCN( mkN nonhuman (mkN "vegetable") );
 	tutor	= mkCN( mkN human (mkN "tutor") );
 	telephone	= mkCN( mkN nonhuman (mkN "telephone") );
@@ -76,14 +97,12 @@ lin
 
 -- PN
 
-	wonda	= mkPN( mkN feminine (mkN "Wonda") );
-	tracy	= mkPN( mkN feminine (mkN "Tracy") );
-	paul	= mkPN( mkN masculine (mkN "Paul") );
-	mark	= mkPN( mkN masculine (mkN "Mark") );
-	carlos	= mkPN( mkN masculine (mkN "Carlos") );
+	tyler	= mkPN( mkN masculine (mkN "Tyler") );
+	emma	= mkPN( mkN feminine (mkN "Emma") );
 
 -- Prep
 
+	at_LOCPREP	= mkPrep "at";
 	to_RECIPIENTPREP	= mkPrep "to";
 	with_COAGENTPREP	= mkPrep "with";
 	around_PREP	= mkPrep "around";
@@ -113,6 +132,13 @@ lin
 
 -- V
 
+	say	= mkVS( mkV "say") ;
+	pay	= mkV2( mkV "pay") noPrep;
+	enjoy	= mkV2( mkV "enjoy") noPrep;
+	earn	= mkV2( mkV "earn") noPrep;
+	could	= mkVV( mkV "could") ;
+	ask	= mkV2S( mkV "ask") noPrep;
+	answer	= mkV2( mkV "answer") noPrep;
 	work	= mkV "work";
 	wash	= mkV2( mkV "wash") noPrep;
 	walk	= mkV2( mkV "walk") around_PREP;

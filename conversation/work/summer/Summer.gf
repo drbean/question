@@ -7,6 +7,7 @@ fun
 
 -- Adv
 
+	much_more	: CAdv;
 	really	: AdA;
 	at_night	: Adv_time;
 	much	: AdA;
@@ -17,6 +18,7 @@ fun
 
 -- AP
 
+	challenging	: A;
 	young	: AP;
 	started	: AP;
 	own	: AP;
@@ -28,9 +30,13 @@ fun
 
 -- Conj
 
+	and	: Conj;
 
 -- Det
 
+	one_of	: Predet;
+	a_couple_of	: Det;
+	another	: Det;
 	two	: Det;
 	one	: Det;
 	a_lot_of	: Predet;
@@ -39,6 +45,21 @@ fun
 
 -- N
 
+	summer_job	: CN;
+	work_N	: N;
+	summer_camp	: CN;
+	reader	: CN;
+	post	: CN;
+	opening	: CN;
+	news_website	: CN;
+	lead	: CN;
+	kind	: CN;
+	internship	: CN;
+	intern	: CN;
+	email	: CN;
+	college_credits	: CN;
+	camp_counselor	: CN;
+	beach_resort	: CN;
 	vegetable	: CN;
 	tutor	: CN;
 	telephone	: CN;
@@ -74,14 +95,12 @@ fun
 
 -- PN
 
-	wonda	: PN;
-	tracy	: PN;
-	paul	: PN;
-	mark	: PN;
-	carlos	: PN;
+	tyler	: PN;
+	emma	: PN;
 
 -- Prep
 
+	at_LOCPREP	: LocPrep;
 	to_RECIPIENTPREP	: RecipientPrep;
 	with_COAGENTPREP	: CoagentPrep;
 	around_PREP	: Prep;
@@ -111,6 +130,13 @@ fun
 
 -- V
 
+	say	: VS;
+	pay	: V2;
+	enjoy	: V2;
+	earn	: V2;
+	could	: VV;
+	ask	: V2S;
+	answer	: V2;
 	work	: V;
 	wash	: V2;
 	walk	: V2;
