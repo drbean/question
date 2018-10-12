@@ -642,7 +642,7 @@ lin
 	IAdvInfICl iadv vp	= myInfICl iadv vp;
 	MkQS t a p qcl = myMkQS t a p qcl;
 	MkS t a p cl = myMkS t a p (ODir False) cl;
-	presentTense	=  presentTense;
+	presentTense	= presentTense;
 	pastTense	= pastTense;
 	futureTense	= futureTense;
 	conditionalTense	= conditionalTense;
