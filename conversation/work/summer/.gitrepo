@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = http://github.com/drbean/summer
+	branch = master
+	commit = 3d7fa6f9e8592387c4f4e0eebe87a0fd82240612
+	parent = f0f63c69495d0cc94d95880084b28385d44fe187
+	cmdver = 0.3.1
