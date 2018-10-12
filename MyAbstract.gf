@@ -357,7 +357,6 @@ fun
 	VP_NP_AP	: VPSlash -> NP -> AP;
 
 	about_PREP	: Prep;
-	at_PREP	: LocPrep;
 	before_PREP	: Prep;
 	from_PREP	: Prep;
 	of_PREP	: Prep;
@@ -371,6 +370,7 @@ fun
 	can	: VV;
 	would	: VV;
 	should	: VV;
+	do	: V;
 	have	: V2;
 	know_V2	: V2;
 	know_VS	: VS;
