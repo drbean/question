@@ -1,7 +1,7 @@
 --# -path=.:./engine:present
 
 concrete CommunicationEng of Communication = MyConcrete  **
-open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ExtraEng, ConstructX, Prelude, (R=ResEng) in {
+open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude, (R=ResEng) in {
 
 -- oper
 
