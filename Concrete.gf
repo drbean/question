@@ -1,4 +1,4 @@
---# -path=.:./engine:present
+--# -path=.:./engine:alltenses
 
 concrete CommunicationEng of Communication = MyConcrete  **
 open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude, (R=ResEng) in {
