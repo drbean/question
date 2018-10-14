@@ -218,7 +218,7 @@ fun
 	Exist	: NP -> Cl;
 
 	Yes, No, NoAnswer	: Utt;
-	Answer : NP -> Utt;
+	-- Answer : NP -> Utt;
 
 	Inject	: Interj -> SC;
 

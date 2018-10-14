@@ -658,7 +658,7 @@ lin
 	Yes	= yes_Utt;
 	No	= no_Utt;
 	NoAnswer	= ss "No answer";
-	Answer np = mkUtt np;
+	-- Answer np = mkUtt np;
 
 	Inject i = mkSC( mkUtt i);
 
