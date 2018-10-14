@@ -5,13 +5,10 @@ import Data.Char
 
 lc_first :: String -> String
 lc_first str@(s:ss) = if any (flip isPrefixOf str) [
-	"Tyler"
-	, "Emma"
-	, "Mark"
-	, "Tracy"
-	, "Carlos"
-	, "Paul"
-	, "Wonda"
+	"Carlos"
+	, "Keiko"
+	, "Claire"
+	, "Hunter"
 	 ]
 	then s:ss
 	else toLower s:ss
