@@ -39,7 +39,7 @@ trans = id
 
 run f tests = do
   gr' <- gr
-  let Just eng = Map.lookup "TriggerEng" (languages gr')
+  let Just eng = Map.lookup "MovingEng" (languages gr')
   let ss = map (chomp . lc_first) tests
   let p =  parse eng (startCat gr')
   let Just incompleteparse = readExpr "ParseIncomplete"
@@ -52,6 +52,8 @@ run f tests = do
   let ts = map (t . p) ss
   let zs = zip (map (++"\t") tests) ts
   putStrLn (unlines (map (\(x,y) -> x ++ (show y ) ) zs) )
+
+{-
 
 ans tests = do
   gr	<- readPGF "./Moving.pgf"
@@ -87,9 +89,11 @@ fol tests = do
   let zs = zip (map (++"\t") tests) ts
   putStrLn (unlines (map (\(x,y) -> x ++ (show y ) ) zs) )
 
+-}
+
 dic_test = [
 
-	"Keiko was wondering if Carlos could help her".
+	"Keiko was wondering if Carlos could help her."
 	, "Keiko is moving to a new apartment this weekend."
 	, "She asks Carlos if she can borrow his truck."
 	, "Carlos says she can borrow his truck on Sunday."
