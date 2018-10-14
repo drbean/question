@@ -39,7 +39,7 @@ trans = id
 
 run f tests = do
   gr' <- gr
-  let Just eng = Map.lookup "TriggerEng" (languages gr')
+  let Just eng = Map.lookup "CommunicationEng" (languages gr')
   let ss = map (chomp . lc_first) tests
   let p =  parse eng (startCat gr')
   let Just incompleteparse = readExpr "ParseIncomplete"
