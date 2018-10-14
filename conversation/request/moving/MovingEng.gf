@@ -76,7 +76,7 @@ lin
 	pack	= mkV2( mkV "pack") noPrep;
 	pack_V	= mkV "pack";
 	move	= mkV2( mkV "move") to_LOCPREP;
-	mind	= mkVV( mkV "mind") ;
+	mind	= ingVV( mkV "mind") ;
 	love	= mkVV( mkV "love") ;
 	leave	= mkV3 IrregEng.leave_V noPrep at_LOCPREP;
 	help_V	= mkV2V( mkV "help") noPrep noPrep;
