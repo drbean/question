@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = http://github.com/drbean/moving
+	branch = master
+	commit = 3a4bb5cbce755f55c9e62d0060b754fe1f22a7b0
+	parent = 0fbb955ae1c5779ac1036018904fe8b96a2a3dd9
+	cmdver = 0.3.1
