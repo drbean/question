@@ -157,6 +157,7 @@ OK	: AP;
 on_TIMEPREP	: TimePrep;
 out_LOCPREP	: LocPrep;
 out	: Adv_goal;
+out of_LOCPREP	: LocPrep;
 pack_V	: V;
 pack	: V2;
 place	: CN;

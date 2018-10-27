@@ -28,8 +28,9 @@ fun
 
 	weekend	: CN;
 	truck	: CN;
+	truck_PLACE	: PlaceNoun;
 	stuff	: N;
-	place	: CN;
+	place	: PlaceNoun;
 	help_N	: N;
 	goldfish	: N;
 	favor	: CN;
@@ -49,7 +50,7 @@ fun
 	with_THEMEPREP	: ThemePrep;
 	to_LOCPREP	: LocPrep;
 	to_PREP	: Prep;
-	out_LOCPREP	: LocPrep;
+	out_of_LOCPREP	: LocPrep;
 	on_TIMEPREP	: TimePrep;
 	in_LOCPREP	: LocPrep;
 	for_TIMEPREP	: TimePrep;
@@ -76,7 +77,7 @@ fun
 	move	: V2;
 	mind	: VV;
 	love	: VV;
-	leave	: V3;
+	Leave	: NP -> LocPrep -> Place -> VP;
 	help_V	: V2V;
 	help	: V2;
 	go_away	: V;
