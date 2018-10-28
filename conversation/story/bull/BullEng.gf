@@ -9,13 +9,13 @@ lin
 
 -- Adv
 
-	suddenly	= ParadigmsEng.mkAdv "suddenly";
 	luckily	= ParadigmsEng.mkAdv "luckily";
 	just	= ParadigmsEng.mkAdV "just";
 	apparently	= ParadigmsEng.mkAdV "apparently";
 
 -- AP
 
+	sudden	= mkA "sudden";
 	shocked	= mkA2( mkA "shocked") at_STIMULUSPREP;
 	unexpected	= mkAP( mkA "unexpected") ;
 	fast	= mkAP( mkA "fast") ;

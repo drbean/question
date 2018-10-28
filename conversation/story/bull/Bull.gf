@@ -7,13 +7,13 @@ fun
 
 -- Adv
 
-	suddenly	: Adv;
 	luckily	: Adv;
 	just	: AdV;
 	apparently	: AdV;
 
 -- AP
 
+	sudden	: A;
 	shocked	: A2;
 	unexpected	: AP;
 	fast	: AP;
