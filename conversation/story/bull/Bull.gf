@@ -36,7 +36,8 @@ fun
 	player	: CN;
 	goal	: PlaceNoun;
 	game	: CN;
-	field	: PlaceNoun;
+	field_PLACENOUN	: PlaceNoun;
+	field	: CN;
 	bull	: CN;
 	boy	: CN;
 	ball	: CN;
@@ -66,7 +67,7 @@ fun
 	witness	: V2;
 	take	: V2;
 	shock	: V2;
-	run	: V2;
+	run	: V;
 	manage	: VV;
 	leave	: V2;
 	leave_A	: V2A;
@@ -76,6 +77,7 @@ fun
 	enter	: V2;
 	decide	: VV;
 	chase	: V2;
+	charge_V	: V;
 	charge	: V2;
 	begin	: VV;
 }

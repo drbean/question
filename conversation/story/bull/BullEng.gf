@@ -38,7 +38,8 @@ lin
 	player	= mkCN( mkN human (mkN "player") );
 	goal	= mkCN( mkN "goal") ;
 	game	= mkCN( mkN nonhuman (mkN "game") );
-	field	= mkCN( mkN "field") ;
+	field_PLACENOUN	= mkCN( mkN "field") ;
+	field	= mkCN( mkN nonhuman (mkN "field") );
 	bull	= mkCN( mkN nonhuman (mkN "bull") );
 	boy	= mkCN( mkN human (mkN "boy") );
 	ball	= mkCN( mkN nonhuman (mkN "ball") );
@@ -68,7 +69,7 @@ lin
 	witness	= mkV2( mkV "witness") noPrep;
 	take	= mkV2 IrregEng.take_V noPrep;
 	shock	= mkV2( mkV "shock") noPrep;
-	run	= mkV2 IrregEng.run_V toward_LOCPREP;
+	run	= IrregEng.run_V;
 	manage	= mkVV( mkV "manage") ;
 	leave	= mkV2 IrregEng.leave_V noPrep;
 	leave_A	= mkV2A IrregEng.leave_V noPrep;
@@ -78,6 +79,7 @@ lin
 	enter	= mkV2( mkV "enter") noPrep;
 	decide	= mkVV( mkV "decide") ;
 	chase	= mkV2( mkV "chase") noPrep;
+	charge_V	= mkV "charge";
 	charge	= mkV2( mkV "charge") noPrep;
 	begin	= mkVV IrregEng.begin_V ;
 
