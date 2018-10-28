@@ -135,6 +135,7 @@ fun
 	HowNP	: S -> NP;
 	WhenNP	: S -> NP;
 	WhetherNP	: S -> NP;
+	WhatNP	: S -> NP;
 	WhyNP	: S -> NP;
 	ThatNP	: S -> NP;
 	PartN	: V -> N;

@@ -580,7 +580,7 @@ lin
 	HowNP s	= myStoNP "how" s;
 	WhenNP s	= myStoNP "when" s;
 	WhetherNP s	= myStoNP "whether" s;
-	-- WhatNP s	= myStoNP "what" s;
+	WhatNP s	= myStoNP "what" s;
 	WhyNP s	= myStoNP "why" s;
 	ThatNP s	= myStoNP "that" s;
 	PartN v	= myPartN v;
