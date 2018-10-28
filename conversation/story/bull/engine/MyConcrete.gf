@@ -244,6 +244,12 @@ oper
 			a = agreement;
 		};
 
+	myRStoNP : (str : Str) -> (rs : RS) -> {s : NPCase => Str ; a : Agr} =
+		\str,rs -> let ag = toAgr Sg P3 Neutr; np = str ++ rs.s ! ag in {
+			s = \\_ => np;
+			a = ag;
+		};
+
 	myNPbodything : (quant : Quant) -> ( body : Str )-> {s : NPCase => Str ; a : Agr} =
 	\quant,body -> let nom = glue ( quant.s ! False ! Sg ) body;
 		gen = glue nom "\'s" in {
@@ -582,6 +588,7 @@ lin
 	WhetherNP s	= myStoNP "whether" s;
 	WhyNP s	= myStoNP "why" s;
 	ThatNP s	= myStoNP "that" s;
+	WhatNP rs	= myRStoNP "what" rs;
 	PartN v	= myPartN v;
 	Gerund vp = GerundNP vp;
 	GerundSlash vp = GerundCN vp;
