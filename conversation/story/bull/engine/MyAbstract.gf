@@ -137,6 +137,7 @@ fun
 	WhetherNP	: S -> NP;
 	WhyNP	: S -> NP;
 	ThatNP	: S -> NP;
+	WhatNP	: RS -> NP;
 	PartN	: V -> N;
 	Gerund	: VP -> NP;
 	GerundSlash	: VPSlash -> CN;
