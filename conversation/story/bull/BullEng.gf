@@ -81,7 +81,7 @@ lin
 	chase	= mkV2( mkV "chase") noPrep;
 	charge_V	= mkV "charge";
 	charge	= mkV2( mkV "charge") noPrep;
-	begin	= mkVV IrregEng.begin_V ;
+	begin	= ingVV IrregEng.begin_V ;
 
 }
 
