@@ -9,7 +9,7 @@ import qualified Data.Map as Map
 import Data.DRS
 
 import PGF2
-mport Communication
+import Communication
 import Utility
 import Model
 
