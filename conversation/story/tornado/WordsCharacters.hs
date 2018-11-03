@@ -8,7 +8,7 @@ import System.Environment.FindBin
 -- path = getProgPath
 -- file = path >>= \p -> return ( (++) p "/Happier.pgf")
 -- gr = file >>= \f -> return ( readPGF f )
-gr = readPGF "/home/drbean/GF/question/business/conflict/communication/Communication.pgf"
+gr = readPGF "/home/drbean/GF/question/conversation/story/tornado/Tornado.pgf"
 
 cat2funs :: String -> IO [CId]
 cat2funs cat = do
@@ -124,6 +124,48 @@ tags = [
 {-
 
 
+1,300 feet	: N;
+150 miles per hour	: N;
+19-year-old	: CN;
+abandoned	: AP;
+after_TIMEPREP	: TimePrep;
+air	: N;
+alive and well	: AP;
+at_LOCPREP	: LocPrep;
+before_TIMEPREP	: TimePrep;
+by the name of_ATTRIBUTEPREP	: AttributePrep;
+drop	: V2;
+field	: PlaceNoun;
+fly	: V2;
+grandmother	: CN;
+home	: PlaceNoun;
+house	: PlaceNoun;
+in	: Adv_location;
+intensify	: V2;
+into_RESULTPREP	: ResultPrep;
+last Thursday	: Adv_time;
+life	: CN;
+lucky	: AP;
+Matt	: PN;
+Missouri	: PN;
+off_LOCPREP	: LocPrep;
+over_EXTENTPREP	: ExtentPrep;
+ride	: CN;
+rip	: V3;
+safe to say	: N;
+start	: V;
+storm	: CN;
+suck
+talk	: V2;
+terrible	: AP;
+through_LOCPREP	: LocPrep;
+to_PREP	: Prep;
+take
+tornado	: CN;
+wall	: CN;
+watch TV	: V;
+when
+while	: Subj;
 
 -}
 

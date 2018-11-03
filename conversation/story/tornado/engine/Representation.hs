@@ -1,9 +1,9 @@
-module Representation (module Representation, module Communication) where
+module Representation (module Representation, module Tornado) where
 
 import Data.DRS
 import Data.DRS.Show
 
-import Communication
+import Tornado
 import PGF
 
 import Model
