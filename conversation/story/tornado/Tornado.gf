@@ -8,7 +8,7 @@ fun
 -- Adv
 
 	last_thursday	: Adv_time;
-	in_LOCPREP	: Adv_location;
+	in_ADV_LOCATION	: Adv_location;
 
 -- AP
 
@@ -52,6 +52,7 @@ fun
 	over_EXTENTPREP	: ExtentPrep;
 	off_LOCPREP	: LocPrep;
 	into_RESULTPREP	: ResultPrep;
+	in_LOCPREP	: LocPrep;
 	by_the_name_of_ATTRIBUTEPREP	: AttributePrep;
 	before_TIMEPREP	: TimePrep;
 	at_LOCPREP	: LocPrep;
@@ -68,6 +69,7 @@ fun
 
 	watch_tv	: V;
 	talk	: V2;
+	Take 	: NP -> Adv_extent -> VP;
 	start	: V;
 	rip	: V3;
 	intensify	: V2;

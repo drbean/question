@@ -10,7 +10,7 @@ lin
 -- Adv
 
 	last_thursday	= ParadigmsEng.mkAdv "last Thursday";
-	in_LOCPREP	= ParadigmsEng.mkAdv "in";
+	in_ADV_LOCATION	= ParadigmsEng.mkAdv "in";
 
 -- AP
 
@@ -54,6 +54,7 @@ lin
 	over_EXTENTPREP	= mkPrep "over";
 	off_LOCPREP	= mkPrep "off";
 	into_RESULTPREP	= mkPrep "into";
+	in_LOCPREP	= mkPrep "in";
 	by_the_name_of_ATTRIBUTEPREP	= mkPrep "by the name of";
 	before_TIMEPREP	= mkPrep "before";
 	at_LOCPREP	= mkPrep "at";
@@ -70,6 +71,7 @@ lin
 
 	watch_tv	= partV( mkV "watch") "TV";
 	talk	= mkV2( mkV "talk") to_PREP;
+	Take np adv 	= VP_Adv_extent (mkVP (mkV2 IrregEng.take_V noPrep) np) adv;
 	start	= mkV "start";
 	rip	= mkV3( mkV "rip") noPrep off_LOCPREP;
 	intensify	= mkV2( mkV "intensify") into_RESULTPREP;
