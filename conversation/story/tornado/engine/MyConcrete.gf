@@ -601,6 +601,7 @@ lin
 	FreeInfICl iadv vp = myFreeInfICl iadv vp;
 	FreeInfCl vp	= myFreeInfCl vp;
 	NomCl ncl = mymkNP ncl;
+	Attributed np adv = mkNP np adv;
 	Mannered np adv = mkNP np adv;
 	Sourced np adv	= mkNP np adv;
 	Themed np adv	= mkNP np adv;

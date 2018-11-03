@@ -150,6 +150,7 @@ fun
 	FreeInfICl	: IAdv -> VP -> NounCl;
 	-- FreeInfCl	: VP -> NounCl;
 	NomCl : NounCl -> NP;
+	Attributed	: NP -> Adv_attribute -> NP;
 	Mannered	: NP -> Adv_manner -> NP;
 	Sourced	: NP -> Adv_source -> NP;
 	Themed	: NP -> Adv_theme -> NP;
