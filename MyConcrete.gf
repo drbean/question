@@ -244,6 +244,12 @@ oper
 			a = agreement;
 		};
 
+	myRStoNP : (str : Str) -> (rs : RS) -> {s : NPCase => Str ; a : Agr} =
+		\str,rs -> let ag = toAgr Sg P3 Neutr; np = str ++ rs.s ! ag in {
+			s = \\_ => np;
+			a = ag;
+		};
+
 	myNPbodything : (quant : Quant) -> ( body : Str )-> {s : NPCase => Str ; a : Agr} =
 	\quant,body -> let nom = glue ( quant.s ! False ! Sg ) body;
 		gen = glue nom "\'s" in {
@@ -424,7 +430,7 @@ oper
 	myCAdvCNNP : (cadv : CAdv) -> ( cn : CN ) -> ( np : NP ) -> { s : Number => Case => Str ; g : Gender } =
 	\cadv,cn,np ->
 		{
-		s = \\n,c => cadv.s ++ cn.s ! n ! c ++ cadv.p ++ np.s ! npNom;
+		s = \\n,c => cadv.s ! Pos ++ cn.s ! n ! c ++ cadv.p ++ np.s ! npNom;
 		g = cn.g};
 
 	myVPPlus : (vp : VP) -> (str : Str) -> {
@@ -580,9 +586,9 @@ lin
 	HowNP s	= myStoNP "how" s;
 	WhenNP s	= myStoNP "when" s;
 	WhetherNP s	= myStoNP "whether" s;
-	-- WhatNP s	= myStoNP "what" s;
 	WhyNP s	= myStoNP "why" s;
 	ThatNP s	= myStoNP "that" s;
+	WhatNP rs	= myRStoNP "what" rs;
 	PartN v	= myPartN v;
 	Gerund vp = GerundNP vp;
 	GerundSlash vp = GerundCN vp;
