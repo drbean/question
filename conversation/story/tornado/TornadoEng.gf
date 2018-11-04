@@ -76,7 +76,7 @@ lin
 	start	= mkV "start";
 	rip	= mkV3( mkV "rip") noPrep off_LOCPREP;
 	intensify	= mkV2( mkV "intensify") into_RESULTPREP;
-	fly	= mkV2 IrregEng.fly_V noPrep;
+	fly	= mkV2 IrregEng.fly_V through_LOCPREP;
 	drop	= mkV2( mkV "drop") noPrep;
 
 }
