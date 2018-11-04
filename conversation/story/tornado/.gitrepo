@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = http://github.com/drbean/tornado
+	branch = master
+	commit = e0b229edb7943887bba55712b4c9c1e9c87c9410
+	parent = 878fe891e519f3ea5d07b8dd88e7561294e9cc26
+	cmdver = 0.3.1
