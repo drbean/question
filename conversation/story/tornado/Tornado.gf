@@ -67,6 +67,7 @@ fun
 
 -- V
 
+	Suck_in	: NP -> VP;
 	watch_tv	: V;
 	talk	: V2;
 	Take 	: NP -> Adv_extent -> VP;

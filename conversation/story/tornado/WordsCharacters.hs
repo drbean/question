@@ -156,7 +156,7 @@ rip	: V3;
 safe to say	: N;
 start	: V;
 storm	: CN;
-suck
+suck in	: V;
 talk	: V2;
 terrible	: AP;
 through_LOCPREP	: LocPrep;

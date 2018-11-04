@@ -1,7 +1,7 @@
 --# -path=.:./engine:alltenses
 
 concrete TornadoEng of Tornado = MyConcrete  **
-open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude, (R=ResEng) in {
+open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude, (R=ResEng), ExtendEng in {
 
 -- oper
 
@@ -69,6 +69,7 @@ lin
 
 -- V
 
+	Suck_in	np = ComplSlashPartLast (mkVPSlash (mkV2 (partV( mkV "suck") "in") )) np;
 	watch_tv	= partV( mkV "watch") "TV";
 	talk	= mkV2( mkV "talk") to_PREP;
 	Take np adv 	= VP_Adv_extent (mkVP (mkV2 IrregEng.take_V noPrep) np) adv;
