@@ -151,7 +151,7 @@ Matt	: PN;
 Missouri	: PN;
 off_LOCPREP	: LocPrep;
 over_EXTENTPREP	: ExtentPrep;
-ride	: CN;
+ride	: N2;
 rip	: V3;
 safe to say	: N;
 start	: V;

@@ -31,7 +31,7 @@ lin
 	tornado	= mkCN( mkN nonhuman (mkN "tornado") );
 	storm	= mkCN( mkN nonhuman (mkN "storm") );
 	Safe_to_say	s = myStoNP "safe to say that" s;
-	ride	= mkCN( mkN nonhuman (mkN "ride") );
+	ride	= mkN2( mkN nonhuman (mkN "ride") ) of_PREP;
 	life	= mkCN( mkN nonhuman (mkN "life" "lives") );
 	house	= mkCN( mkN "house") ;
 	home	= mkCN( mkN "home") ;

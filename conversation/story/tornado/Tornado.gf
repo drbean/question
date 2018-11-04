@@ -29,7 +29,7 @@ fun
 	tornado	: CN;
 	storm	: CN;
 	Safe_to_say	: S -> NP;
-	ride	: CN;
+	ride	: N2;
 	life	: CN;
 	house	: PlaceNoun;
 	home	: PlaceNoun;
