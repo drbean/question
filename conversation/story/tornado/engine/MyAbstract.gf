@@ -27,6 +27,7 @@ cat
 	ThemePrep;
 	TimePrep;
 	TrajectoryPrep;
+	ValuePrep;
 	Adv_attribute;
 	Adv_beneficiary;
 	Adv_cause;
@@ -46,6 +47,7 @@ cat
 	Adv_theme;
 	Adv_time;
 	Adv_trajectory;
+	Adv_value;
 	MassDet;
 	Postdet;
 	SubordCl;
@@ -85,6 +87,7 @@ fun
 	Receiving	: RecipientPrep -> NP -> Adv_recipient;
 	Trajectoring	: TrajectoryPrep -> NP -> Adv_trajectory;
 	Causing	: CausePrep -> NP -> Adv_cause;
+	Valuing	: ValuePrep -> NP -> Adv_value;
 	V_	: V -> VP ;
 	V_NP	: V2 -> NP -> VP;
 	V_NP_VP:	V2V -> NP -> VP -> VP;
@@ -176,6 +179,7 @@ fun
 	VP_Adv_recipient	: VP -> Adv_recipient -> VP;
 	VP_Adv_trajectory	: VP -> Adv_trajectory -> VP;
 	VP_Adv_cause	: VP -> Adv_cause -> VP;
+	VP_Adv_value : VP -> Adv_value -> VP;
 	WithCl	: VP -> SubordCl -> VP;
 	VPToo	: VP -> VP;
 	VPAlready	: VP -> VP;
