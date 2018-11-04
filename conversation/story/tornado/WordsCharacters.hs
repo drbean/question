@@ -132,6 +132,7 @@ after_TIMEPREP	: TimePrep;
 air	: N;
 alive and well	: AP;
 at_LOCPREP	: LocPrep;
+at_VALUEPREP	: ValuePrep;
 before_TIMEPREP	: TimePrep;
 by the name of_ATTRIBUTEPREP	: AttributePrep;
 drop	: V2;
