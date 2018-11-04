@@ -37,7 +37,7 @@ fun
 	field	: PlaceNoun;
 	air	: N;
 	nineteen_year_old	: CN;
-	one_fifty_miles_per_hour	: N;
+	one_fifty_miles_per_hour	: NP;
 	thirteen_hundred_feet	: N;
 
 -- PN

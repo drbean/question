@@ -39,7 +39,7 @@ lin
 	field	= mkCN( mkN "field") ;
 	air	= mkN "air" nonExist;
 	nineteen_year_old	= mkCN( mkN human (mkN "19-year-old") );
-	one_fifty_miles_per_hour	= mkN "150 miles per hour" nonExist;
+	one_fifty_miles_per_hour	= mkNP (mkN "150 miles per hour" nonExist);
 	thirteen_hundred_feet	= mkN "1,300 feet" nonExist;
 
 -- PN
