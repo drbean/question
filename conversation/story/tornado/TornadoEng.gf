@@ -15,6 +15,7 @@ lin
 -- AP
 
 	terrible	= mkAP( mkA "terrible") ;
+	safe	= mkAP( mkA "safe") ;
 	lucky	= mkAP( mkA "lucky") ;
 	alive_and_well	= mkAP( mkA "alive and well") ;
 	abandoned	= mkAP( mkA "abandoned") ;
@@ -75,6 +76,7 @@ lin
 	talk	= mkV2( mkV "talk") to_PREP;
 	Take np adv 	= VP_Adv_extent (mkVP (mkV2 IrregEng.take_V noPrep) np) adv;
 	start	= mkV "start";
+	say	= mkVS IrregEng.say_V ;
 	rip	= mkV3( mkV "rip") noPrep off_LOCPREP;
 	intensify	= mkV2( mkV "intensify") into_RESULTPREP;
 	fly	= mkV2 IrregEng.fly_V through_LOCPREP;

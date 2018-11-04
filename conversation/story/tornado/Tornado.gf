@@ -13,6 +13,7 @@ fun
 -- AP
 
 	terrible	: AP;
+	safe	: AP;
 	lucky	: AP;
 	alive_and_well	: AP;
 	abandoned	: AP;
@@ -73,6 +74,7 @@ fun
 	talk	: V2;
 	Take 	: NP -> Adv_extent -> VP;
 	start	: V;
+	say	: VS;
 	rip	: V3;
 	intensify	: V2;
 	fly	: V2;
