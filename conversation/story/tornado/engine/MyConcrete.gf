@@ -1,4 +1,4 @@
-concrete MyConcrete of MyAbstract = CatEng, ConjunctionEng ** open ResEng, Prelude, SyntaxEng, (P = ParadigmsEng), VerbEng, AdverbEng, IrregEng, ExtendEng in {
+concrete MyConcrete of MyAbstract = CatEng, ConjunctionEng ** open ResEng, Prelude, SyntaxEng, (P = ParadigmsEng), VerbEng, AdjectiveEng, AdverbEng, IrregEng, ExtendEng, IdiomEng, SentenceEng in {
 
 lincat
 	NounCl = {s : ResEng.Tense => Anteriority => CPolarity => Order => Str; c : NPCase };
@@ -595,6 +595,7 @@ lin
 	Gerund vp = GerundNP vp;
 	GerundSlash vp = GerundCN vp;
 	ByGerund vp = ByVP vp;
+	PredAPVP ap vp	= ImpersCl (UseComp (CompAP (SentAP ap (EmbedVP vp)))) ;
 	SClSlash	np vpslash = mkClSlash np vpslash;
 	-- VPClSlash	vpslash = mkClSlash vpslash;
 	FreeICl ip vp = myFreeICl ip vp;

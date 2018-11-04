@@ -145,6 +145,7 @@ fun
 	Gerund	: VP -> NP;
 	GerundSlash	: VPSlash -> CN;
 	ByGerund : VP -> Adv_manner;
+	PredAPVP	: AP -> VP -> Cl;
 	SClSlash	: NP -> VPSlash -> ClSlash;
 	-- VPClSlash	: VPSlash -> ClSlash;
 	FreeICl : IP -> VP -> NounCl;
