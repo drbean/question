@@ -5,11 +5,13 @@ import Data.Char
 
 lc_first :: String -> String
 lc_first str@(s:ss) = if any (flip isPrefixOf str) [
-	"Saturday"
-	, "Australia"
-	, "Missouri"
-	, "Matt"
-	, "Ontario"
+	"Tyler"
+	, "Emma"
+	, "Mark"
+	, "Tracy"
+	, "Carlos"
+	, "Paul"
+	, "Wonda"
 	 ]
 	then s:ss
 	else toLower s:ss
@@ -24,6 +26,7 @@ chomp('\x2019': xs) = "'" ++ chomp xs
 chomp (' ': 'i': 't': '\'': 's': ' ': xs)	= " it is " ++ chomp xs
 chomp (' ': ',': ' ': xs) = " , " ++ chomp xs
 chomp ('1': ',': '0': xs) = "1,0" ++ chomp xs
+chomp ('1': ',': '3': xs) = "1,3" ++ chomp xs
 chomp ('1': ',': '8': xs) = "1,8" ++ chomp xs
 chomp (x:xs) | x `elem` ".,?？" = chomp xs
             | otherwise      =     x:chomp xs

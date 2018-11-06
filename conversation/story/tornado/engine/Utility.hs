@@ -5,7 +5,11 @@ import Data.Char
 
 lc_first :: String -> String
 lc_first str@(s:ss) = if any (flip isPrefixOf str) [
-	"Matt"
+	"Saturday"
+	, "Australia"
+	, "Missouri"
+	, "Matt"
+	, "Ontario"
 	 ]
 	then s:ss
 	else toLower s:ss
