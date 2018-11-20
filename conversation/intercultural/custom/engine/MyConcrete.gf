@@ -678,6 +678,7 @@ lin
 	TimeInTime cn adv = myAdvCN cn adv;
 	TimeAsAdv det cn = mkAdv P.noPrep (mkNP det cn);
 	TimeAsAdvWithPredet predet det cn = mkAdv P.noPrep (mkNP predet (mkNP det cn) );
+	AdvTime adv time	= ParadigmsEng.mkAdv (adv.s ++ time.s);
 	KindInPlace cn adv	= myAdvCN cn adv;
 	NPInPlace np adv = mkNP np adv;
 	PlaceKind ap n = mkCN ap n;
