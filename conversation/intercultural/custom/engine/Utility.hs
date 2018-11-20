@@ -22,6 +22,7 @@ chomp []                      = []
 -- chomp ('s':'\'':xs)           = "s 's" ++ chomp xs
 chomp ('s': 'o': 'm': 'e': 'o': 'n': 'e': xs) = " some &+ one " ++ chomp xs
 -- chomp ('e': 'v': 'e': 'r': 'y': 't': 'h': 'i': 'n': 'g': xs) = " every &+ thing " ++ chomp xs
+-- chomp('’': xs) = "'" ++ chomp xs
 chomp('\x2019': xs) = "'" ++ chomp xs
 chomp (' ': 'i': 't': '\'': 's': ' ': xs)	= " it is " ++ chomp xs
 chomp (' ': ',': ' ': xs) = " , " ++ chomp xs
