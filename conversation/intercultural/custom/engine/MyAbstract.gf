@@ -236,6 +236,7 @@ fun
 	KindOfKind  : CN -> Adv -> CN;
 	MassKindOfKind  : N -> Adv -> N;
 	KindInTime  : CN -> Adv_time -> CN;
+	MassKindInTime  : N -> Adv_time -> N;
 	KindOfTime	: AP -> Time -> Time;
 	TimeInTime  : Time -> Adv_time -> Time;
 	TimeAsAdv	: Det -> Time -> Adv_time;

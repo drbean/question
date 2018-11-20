@@ -674,6 +674,7 @@ lin
 	KindOfKind cn adv	= myAdvCN cn adv;
 	MassKindOfKind n adv	= mymkN_Adv n adv;
 	KindInTime cn adv	= myAdvCN cn adv;
+	MassKindInTime n adv	= mymkN_Adv n adv;
 	KindOfTime adj cn	= mkCN adj cn;
 	TimeInTime cn adv = myAdvCN cn adv;
 	TimeAsAdv det cn = mkAdv P.noPrep (mkNP det cn);
