@@ -15,7 +15,6 @@ fun
 	even_A	: AdA;
 	even_V	: AdV;
 	at_first	: Adv_time;
-	also	: AdV;
 
 -- AP
 
@@ -34,6 +33,7 @@ fun
 
 -- Det
 
+	also	: Postdet;
 	one	: Det;
 	all	: Predet;
 

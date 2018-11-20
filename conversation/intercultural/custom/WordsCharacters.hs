@@ -129,7 +129,7 @@ acceptable	: AP;
 after_TIMEPREP	: TimePrep;
 after a while	: Adv_time;
 all	: Predet;
-also	: AdV;
+also	: Postdet;
 around_TIMEPREP	: TimePrep;
 at_LOCPREP	: LocPrep;
 at_THEMEPREP	: ThemePrep;

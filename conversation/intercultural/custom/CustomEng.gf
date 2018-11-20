@@ -17,7 +17,6 @@ lin
 	even_A	= ParadigmsEng.mkAdA "even";
 	even_V	= ParadigmsEng.mkAdV "even";
 	at_first	= ParadigmsEng.mkAdv "at first";
-	also	= ParadigmsEng.mkAdV "also";
 
 -- AP
 
@@ -36,6 +35,7 @@ lin
 
 -- Det
 
+	also	= ss "also";
 	one	= mkDet( mkCard (mkNumeral n1_Unit));
 	all	= ss "all";
 
