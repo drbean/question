@@ -144,6 +144,7 @@ come	: V;
 cover	: V2;
 day	: CN;
 difficult	: AP;
+dinner	: N;
 dinner table	: CN;
 drink	: V2;
 eat	: V;

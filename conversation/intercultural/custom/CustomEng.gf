@@ -57,6 +57,7 @@ lin
 	food	= mkN "food" nonExist;
 	evening	= mkCN( mkN nonhuman (mkN "evening") );
 	dinner_table	= mkCN( mkN nonhuman (mkN "dinner table") );
+	dinner	= mkN "dinner" nonExist;
 	day	= mkCN( mkN nonhuman (mkN "day") );
 	clothing	= mkN "clothing" nonExist;
 	body	= mkCN( mkN nonhuman (mkN "body") );

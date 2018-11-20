@@ -55,6 +55,7 @@ fun
 	food	: N;
 	evening	: CN;
 	dinner_table	: CN;
+	dinner	: N;
 	day	: CN;
 	clothing	: N;
 	body	: CN;
