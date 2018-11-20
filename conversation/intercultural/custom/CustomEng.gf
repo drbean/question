@@ -121,7 +121,7 @@ lin
 	feel	= mkVA IrregEng.feel_V ;
 	expect	= mkV2V( mkV "expect") noPrep to_PREP;
 	enjoy	= mkV2( mkV "enjoy") noPrep;
-	eat	= mkV "eat";
+	eat	= IrregEng.eat_V;
 	drink	= mkV2 IrregEng.drink_V noPrep;
 	cover	= mkV2( mkV "cover") noPrep;
 	come	= IrregEng.come_V;
