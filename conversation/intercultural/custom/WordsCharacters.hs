@@ -219,7 +219,7 @@ uncomfortable	: AP;
 until_TIMEPREP	: TimePrep;
 up
 used
-usually	: AdV;
+usually	: Postdet;
 want	: VV;
 way
 wear	: V2;

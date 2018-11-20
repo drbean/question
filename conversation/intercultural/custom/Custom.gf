@@ -8,7 +8,6 @@ fun
 -- Adv
 
 	after_a_while	: Adv_time;
-	usually	: AdV;
 	then	: Adv_time;
 	really	: AdV;
 	really_ADA	: AdA;
@@ -33,6 +32,7 @@ fun
 
 -- Det
 
+	usually	: Postdet;
 	also	: Postdet;
 	one	: Det;
 	all	: Predet;

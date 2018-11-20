@@ -10,7 +10,6 @@ lin
 -- Adv
 
 	after_a_while	= ParadigmsEng.mkAdv "after a while";
-	usually	= ParadigmsEng.mkAdV "usually";
 	then	= ParadigmsEng.mkAdv "then";
 	really	= ParadigmsEng.mkAdV "really";
 	really_ADA	= ParadigmsEng.mkAdA "really";
@@ -35,6 +34,7 @@ lin
 
 -- Det
 
+	usually	= ss "usually";
 	also	= ss "also";
 	one	= mkDet( mkCard (mkNumeral n1_Unit));
 	all	= ss "all";
