@@ -108,7 +108,7 @@ fun
 	make	: V2;
 	live	: V2;
 	like	: V2;
-	invite	: V2;
+	invite	: V3;
 	have_to	: VV;
 	guess	: VS;
 	grow_up	: V;

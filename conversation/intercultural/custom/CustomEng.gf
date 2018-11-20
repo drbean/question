@@ -110,7 +110,7 @@ lin
 	make	= mkV2 IrregEng.make_V noPrep;
 	live	= mkV2( mkV "live") in_LOCPREP;
 	like	= mkV2( mkV "like") noPrep;
-	invite	= mkV2( mkV "invite") to_PREP;
+	invite	= mkV3( mkV "invite") noPrep to_PREP;
 	have_to	= mkVV IrregEng.have_V ;
 	guess	= mkVS( mkV "guess") ;
 	grow_up	= partV IrregEng.grow_V "up";
