@@ -9,8 +9,10 @@ fun
 
 	after_a_while	: Adv_time;
 	then	: Adv_time;
-	really	: AdV;
+	really	: Adv;
+	really_ADV	: AdV;
 	really_ADA	: AdA;
+	late	: Adv_time;
 	even_A	: AdA;
 	even_V	: AdV;
 	at_first	: Adv_time;
@@ -22,7 +24,6 @@ fun
 	secure	: AP;
 	real	: AP;
 	next	: AP;
-	late	: AP;
 	difficult	: AP;
 	acceptable	: AP;
 

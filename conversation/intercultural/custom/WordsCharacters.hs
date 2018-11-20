@@ -170,7 +170,7 @@ in_LOCPREP	: LocPrep;
 in_TIMEPREP	: TimePrep;
 invite	: V2;
 South Korea	: PN;
-late	: AP;
+late	: Adv_time;
 later
 like	: V2;
 live	: V2;
@@ -189,6 +189,7 @@ over_LOCPREP	: LocPrep;
 people
 put	: V3;
 real	: AP;
+really	: Adv;
 really_ADA	: AdA;
 really	: AdV;
 Saudi Arabia	: PlaceNoun;

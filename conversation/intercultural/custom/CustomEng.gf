@@ -11,8 +11,10 @@ lin
 
 	after_a_while	= ParadigmsEng.mkAdv "after a while";
 	then	= ParadigmsEng.mkAdv "then";
-	really	= ParadigmsEng.mkAdV "really";
+	really	= ParadigmsEng.mkAdv "really";
+	really_ADV	= ParadigmsEng.mkAdV "really";
 	really_ADA	= ParadigmsEng.mkAdA "really";
+	late	= ParadigmsEng.mkAdv "late";
 	even_A	= ParadigmsEng.mkAdA "even";
 	even_V	= ParadigmsEng.mkAdV "even";
 	at_first	= ParadigmsEng.mkAdv "at first";
@@ -24,7 +26,6 @@ lin
 	secure	= mkAP( mkA "secure") ;
 	real	= mkAP( mkA "real") ;
 	next	= mkAP( mkA "next") ;
-	late	= mkAP( mkA "late") ;
 	difficult	= mkAP( mkA "difficult") ;
 	acceptable	= mkAP( mkA "acceptable") ;
 
