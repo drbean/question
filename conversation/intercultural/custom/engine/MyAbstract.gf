@@ -55,6 +55,7 @@ cat
 	NounCl;
 	ListAdv_manner;
 	ListAdv_result;
+	ListAdv_time;
 
 fun
 	Look_bad	: VA -> AP -> VP;
@@ -310,6 +311,9 @@ fun
 	Adv_resultList : Adv_result -> Adv_result -> ListAdv_result;
 	AddAdv_result : Adv_result -> ListAdv_result -> ListAdv_result;
 	CloseAdv_result	: Conj -> ListAdv_result -> Adv_result;
+	Adv_timeList : Adv_time -> Adv_time -> ListAdv_time;
+	AddAdv_time : Adv_time -> ListAdv_time -> ListAdv_time;
+	CloseAdv_time	: Conj -> ListAdv_time -> Adv_time;
 	ConcatS	: Conj -> S -> S -> S;
 	PreConjUtt	: Conj -> Utt -> Utt;
 

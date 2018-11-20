@@ -50,6 +50,7 @@ lincat
 	Partitive = Det;
 	ListAdv_manner	= ListAdv;
 	ListAdv_result	= ListAdv;
+	ListAdv_time	= ListAdv;
 
 param
   Auxiliary	= Do | Be | Should;
@@ -743,15 +744,9 @@ lin
 	APList np1 np2 = mkListAP np1 np2;
 	AddAP ap list = mkListAP ap list;
 	CloseAP conj list = mkAP conj list;
-	AdvList np1 np2 = mkListAdv np1 np2;
-	AddAdv ap list = mkListAdv ap list;
-	CloseAdv conj list = mkAdv conj list;
-	Adv_mannerList np1 np2 = mkListAdv np1 np2;
-	AddAdv_manner ap list = mkListAdv ap list;
-	CloseAdv_manner conj list = mkAdv conj list;
-	Adv_resultList adv1 adv2 = mkListAdv adv1 adv2;
-	AddAdv_result adv list = mkListAdv adv list;
-	CloseAdv_result conj list = mkAdv conj list;
+	AdvList, Adv_mannerList, Adv_resultList, Adv_timeList	= \adv1,adv2 -> mkListAdv adv1 adv2;
+	AddAdv, AddAdv_manner, AddAdv_result, AddAdv_time	= \ adv,list -> mkListAdv adv list;
+	CloseAdv, CloseAdv_manner, CloseAdv_result, CloseAdv_time	= \conj,list -> mkAdv conj list;
 	ConcatS	conj s1 s2 = mkS conj s1 s2;
 	PreConjUtt conj utt = mkPhr (mkPConj conj) utt;
 
