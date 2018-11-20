@@ -43,7 +43,7 @@ lin
 -- N
 
 	work	= mkN "work" nonExist;
-	woman	= mkCN( mkN human (mkN "woman") );
+	woman	= mkCN( mkN human (mkN "woman" "women") );
 	two_o_clock	= mkN "two o’clock" nonExist;
 	time	= mkCN( mkN nonhuman (mkN "time") );
 	nine_o_clock	= mkN "nine o’clock" nonExist;
