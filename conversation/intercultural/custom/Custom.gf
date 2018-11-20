@@ -10,6 +10,7 @@ fun
 	and	: Adv;
 	after_a_while	: Adv_time;
 	then	: Adv_time;
+	sometimes	: Adv_time;
 	really	: Adv;
 	really_ADV	: AdV;
 	really_ADA	: AdA;

@@ -12,6 +12,7 @@ lin
 	and	= ParadigmsEng.mkAdv "and";
 	after_a_while	= ParadigmsEng.mkAdv "after a while";
 	then	= ParadigmsEng.mkAdv "then";
+	sometimes	= ParadigmsEng.mkAdv "sometimes";
 	really	= ParadigmsEng.mkAdv "really";
 	really_ADV	= ParadigmsEng.mkAdV "really";
 	really_ADA	= ParadigmsEng.mkAdA "really";

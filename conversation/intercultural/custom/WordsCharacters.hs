@@ -201,7 +201,7 @@ show	: VS;
 slurp	: V;
 so	: Subj;
 something
-sometimes
+sometimes	: Adv_time;
 soup	: N;
 Spain	: PlaceNoun;
 start_V2	: V2;
