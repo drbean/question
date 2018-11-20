@@ -95,7 +95,7 @@ dic_test = [
 
 	"Carla lived in Saudi Arabia for a while."
 	, "Women put something over their head and they wear clothing that covers the whole body."
-	, "At first, Carla felt uncomfortable and found it a real nuisance."
+	, "At first, Carla felt uncomfortable and she found it a real nuisance."
 	, "But after a while, Carla got used to it and she even started to like it."
 	, "You feel really secure, and you also don’t have to worry about what to wear all the time."
 
