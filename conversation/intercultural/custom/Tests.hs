@@ -100,8 +100,8 @@ dic_test = [
 	, "You feel really secure, and you also don’t have to worry about what to wear all the time."
 
 	, "When Nate lived in Spain, he was surprised at how late in the evening people eat."
-	, "When you are invited to dinner, you are expected to come around nine o’clock, and you usually don’t start dinner until ten."
-	, "And people stay really late – sometimes until two in the morning or even later."
+	, "When you are invited to dinner, you are expected to come around nine o’clock, and you usually don’t start dinner until ten o’clock."
+	, "And people stay really late – sometimes until two o’clock in the morning or even later."
 	, "Nate found that difficult."
 	, "How do you get up and go to work the next day after eating and talking until three in the morning?"
 
