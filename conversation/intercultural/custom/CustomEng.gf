@@ -96,34 +96,34 @@ lin
 -- V
 
 	worry	= mkV2( mkV "worry") about_THEMEPREP;
-	wear	= mkV2( mkV "wear") noPrep;
+	wear	= mkV2 IrregEng.wear_V noPrep;
 	want	= mkVV( mkV "want") ;
 	travel	= mkV2( mkV "travel") in_LOCPREP;
-	think	= mkVS( mkV "think") ;
+	think	= mkVS IrregEng.think_V ;
 	surprise	= mkV2S( mkV "surprise") at_THEMEPREP;
 	stay	= mkV "stay";
 	start_VV	= mkVV( mkV "start") ;
 	start_V2	= mkV2( mkV "start") noPrep;
 	slurp	= mkV "slurp";
 	show	= mkVS( mkV "show") ;
-	put	= mkV3( mkV "put") noPrep over_LOCPREP;
-	make	= mkV2( mkV "make") noPrep;
+	put	= mkV3 IrregEng.put_V noPrep over_LOCPREP;
+	make	= mkV2 IrregEng.make_V noPrep;
 	live	= mkV2( mkV "live") in_LOCPREP;
 	like	= mkV2( mkV "like") noPrep;
 	invite	= mkV2( mkV "invite") to_PREP;
-	have_to	= mkVV( mkV "have") ;
+	have_to	= mkVV IrregEng.have_V ;
 	guess	= mkVS( mkV "guess") ;
-	grow_up	= partV( mkV "grow") "up";
-	go_to_work	= partV( mkV "go") "to work";
-	get_used_to	= partV( mkV "get") "used to";
-	get_up	= partV( mkV "get") "up";
-	find	= mkV2A( mkV "find") noPrep;
-	feel	= mkVA( mkV "feel") ;
+	grow_up	= partV IrregEng.grow_V "up";
+	go_to_work	= partV IrregEng.go_V "to work";
+	get_used_to	= partV IrregEng.get_V "used to";
+	get_up	= partV IrregEng.get_V "up";
+	find	= mkV2A IrregEng.find_V noPrep;
+	feel	= mkVA IrregEng.feel_V ;
 	expect	= mkV2V( mkV "expect") noPrep to_PREP;
 	enjoy	= mkV2( mkV "enjoy") noPrep;
-	drink	= mkV2( mkV "drink") noPrep;
+	drink	= mkV2 IrregEng.drink_V noPrep;
 	cover	= mkV2( mkV "cover") noPrep;
-	come	= mkV "come";
+	come	= IrregEng.come_V;
 	bother	= mkV2( mkV "bother") noPrep;
 
 }
