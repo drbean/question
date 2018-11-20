@@ -7,6 +7,7 @@ fun
 
 -- Adv
 
+	and	: Adv;
 	after_a_while	: Adv_time;
 	then	: Adv_time;
 	really	: Adv;

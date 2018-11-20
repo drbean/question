@@ -9,6 +9,7 @@ lin
 
 -- Adv
 
+	and	= ParadigmsEng.mkAdv "and";
 	after_a_while	= ParadigmsEng.mkAdv "after a while";
 	then	= ParadigmsEng.mkAdv "then";
 	really	= ParadigmsEng.mkAdv "really";

@@ -130,6 +130,7 @@ after_TIMEPREP	: TimePrep;
 after a while	: Adv_time;
 all	: Predet;
 also	: Postdet;
+and	: Adv;
 around_TIMEPREP	: TimePrep;
 at_LOCPREP	: LocPrep;
 at_THEMEPREP	: ThemePrep;
