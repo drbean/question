@@ -60,7 +60,7 @@ fun
 	evening	: CN;
 	dinner_table	: CN;
 	dinner	: N;
-	day	: CN;
+	day	: Time;
 	clothing	: N;
 	body	: CN;
 

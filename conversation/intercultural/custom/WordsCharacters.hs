@@ -143,7 +143,7 @@ Carla	: PN;
 clothing	: N;
 come	: V;
 cover	: V2;
-day	: CN;
+day	: Time;
 difficult	: AP;
 dinner	: N;
 dinner table	: CN;
