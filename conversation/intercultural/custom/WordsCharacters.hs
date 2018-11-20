@@ -173,7 +173,7 @@ in_TIMEPREP	: TimePrep;
 invite	: V2;
 South Korea	: PN;
 late	: Adv_time;
-later
+later	: Adv;
 like	: V2;
 live	: V2;
 make	: V2;

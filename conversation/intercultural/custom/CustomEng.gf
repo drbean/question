@@ -16,8 +16,9 @@ lin
 	really	= ParadigmsEng.mkAdv "really";
 	really_ADV	= ParadigmsEng.mkAdV "really";
 	really_ADA	= ParadigmsEng.mkAdA "really";
+	later	= ParadigmsEng.mkAdv "later";
 	late	= ParadigmsEng.mkAdv "late";
-	even_A	= ParadigmsEng.mkAdA "even";
+	even	= ParadigmsEng.mkAdv "even";
 	even_V	= ParadigmsEng.mkAdV "even";
 	at_first	= ParadigmsEng.mkAdv "at first";
 
