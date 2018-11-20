@@ -115,7 +115,7 @@ fun
 	go_to_work	: V;
 	get_used_to	: V;
 	get_up	: V;
-	find	: V2A;
+	find	: V3;
 	feel	: VA;
 	expect	: V2V;
 	enjoy	: V2;
