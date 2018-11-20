@@ -120,7 +120,8 @@ lin
 	go_to_work	= partV IrregEng.go_V "to work";
 	get_used_to	= partV IrregEng.get_V "used to";
 	get_up	= partV IrregEng.get_V "up";
-	find	= mkV3 IrregEng.find_V noPrep noPrep;
+	find_AP	= mkV2A IrregEng.find_V noPrep;
+	find_NP	= mkV3 IrregEng.find_V noPrep noPrep;
 	feel	= mkVA IrregEng.feel_V ;
 	expect	= mkV2V( mkV "expect") noPrep to_PREP;
 	enjoy	= mkV2( mkV "enjoy") noPrep;

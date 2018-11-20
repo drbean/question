@@ -118,7 +118,8 @@ fun
 	go_to_work	: V;
 	get_used_to	: V;
 	get_up	: V;
-	find	: V3;
+	find_AP	: V2A;
+	find_NP	: V3;
 	feel	: VA;
 	expect	: V2V;
 	enjoy	: V2;
