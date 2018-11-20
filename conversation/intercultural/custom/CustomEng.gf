@@ -27,7 +27,6 @@ lin
 	real	= mkAP( mkA "real") ;
 	next	= mkAP( mkA "next") ;
 	late	= mkAP( mkA "late") ;
-	head	= mkAP( mkA "head") ;
 	difficult	= mkAP( mkA "difficult") ;
 	acceptable	= mkAP( mkA "acceptable") ;
 
@@ -54,6 +53,7 @@ lin
 	noise_CN	= mkCN( mkN nonhuman (mkN "noise") );
 	noise	= mkN "noise" nonExist;
 	morning	= mkCN( mkN nonhuman (mkN "morning") );
+	head	= mkCN( mkN nonhuman (mkN "head") );
 	food	= mkN "food" nonExist;
 	evening	= mkCN( mkN nonhuman (mkN "evening") );
 	dinner_table	= mkCN( mkN nonhuman (mkN "dinner table") );

@@ -162,7 +162,7 @@ go to work	: V;
 grow up	: V;
 guess	: VS;
 have	: VV;
-head	: AP;
+head	: CN;
 how
 How
 in_LOCPREP	: LocPrep;

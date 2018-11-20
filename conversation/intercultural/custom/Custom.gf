@@ -25,7 +25,6 @@ fun
 	real	: AP;
 	next	: AP;
 	late	: AP;
-	head	: AP;
 	difficult	: AP;
 	acceptable	: AP;
 
@@ -52,6 +51,7 @@ fun
 	noise_CN	: CN;
 	noise	: N;
 	morning	: CN;
+	head	: CN;
 	food	: N;
 	evening	: CN;
 	dinner_table	: CN;
