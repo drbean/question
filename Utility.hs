@@ -29,6 +29,7 @@ chomp (' ': ',': ' ': xs) = " , " ++ chomp xs
 chomp ('1': ',': '0': xs) = "1,0" ++ chomp xs
 chomp ('1': ',': '3': xs) = "1,3" ++ chomp xs
 chomp ('1': ',': '8': xs) = "1,8" ++ chomp xs
+chomp (' ': '-': ' ': xs) = " " ++ chomp xs
 chomp (x:xs) | x `elem` ".,?？" = chomp xs
             | otherwise      =     x:chomp xs
 
