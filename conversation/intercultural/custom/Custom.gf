@@ -119,6 +119,7 @@ fun
 	feel	: VA;
 	expect	: V2V;
 	enjoy	: V2;
+	eat	: V;
 	drink	: V2;
 	cover	: V2;
 	come	: V;
