@@ -43,11 +43,11 @@ lin
 
 	work	= mkN "work" nonExist;
 	woman	= mkCN( mkN human (mkN "woman" "women") );
-	two_o_clock	= mkN "two o’clock" nonExist;
+	two_o_clock	= mkN "two o'clock" nonExist;
 	time	= mkCN( mkN nonhuman (mkN "time") );
-	nine_o_clock	= mkN "nine o’clock" nonExist;
-	ten_o_clock	= mkN "ten o’clock" nonExist;
-	three_o_clock	= mkN "three o’clock" nonExist;
+	nine_o_clock	= mkN "nine o'clock" nonExist;
+	ten_o_clock	= mkN "ten o'clock" nonExist;
+	three_o_clock	= mkN "three o'clock" nonExist;
 	soup	= mkN "soup" nonExist;
 	nuisance	= mkCN( mkN nonhuman (mkN "nuisance") );
 	noise_CN	= mkCN( mkN nonhuman (mkN "noise") );
