@@ -120,7 +120,7 @@ lin
 	guess	= mkVS( mkV "guess") ;
 	grow_up	= partV IrregEng.grow_V "up";
 	go_to_work	= partV IrregEng.go_V "to work";
-	get_used_to	= partV IrregEng.get_V "used to";
+	get_used_to	= mkV2 ( partV IrregEng.get_V "used to" ) noPrep;
 	get_up	= partV IrregEng.get_V "up";
 	find_AP	= mkV2A IrregEng.find_V noPrep;
 	find_NP	= mkV3 IrregEng.find_V noPrep noPrep;

@@ -118,7 +118,7 @@ fun
 	guess	: VS;
 	grow_up	: V;
 	go_to_work	: V;
-	get_used_to	: V;
+	get_used_to	: V2;
 	get_up	: V;
 	find_AP	: V2A;
 	find_NP	: V3;

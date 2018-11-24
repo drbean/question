@@ -160,7 +160,7 @@ for_TIMEPREP	: TimePrep;
 find_NP	: V3;
 find_AP	: V2A;
 get up	: V;
-get used to	: V;
+get used to	: V2;
 go to work	: V;
 grow up	: V;
 guess	: VS;
