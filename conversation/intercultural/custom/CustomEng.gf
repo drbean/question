@@ -20,6 +20,8 @@ lin
 	really_ADA	= ParadigmsEng.mkAdA "really";
 	later	= ParadigmsEng.mkAdv "later";
 	late	= ParadigmsEng.mkAdv "late";
+	late_ADV	= ParadigmsEng.mkAdv "late";
+	for_a_while	= ParadigmsEng.mkAdv "for a while";
 	even	= ParadigmsEng.mkAdv "even";
 	even_V	= ParadigmsEng.mkAdV "even";
 	at_first	= ParadigmsEng.mkAdv "at first";
@@ -107,7 +109,7 @@ lin
 	want	= mkVV( mkV "want") ;
 	travel	= mkV2( mkV "travel") in_LOCPREP;
 	think	= mkVS IrregEng.think_V ;
-	surprise	= mkV2S( mkV "surprise") at_THEMEPREP;
+	surprise	= mkV2Q( mkV "surprise") at_THEMEPREP;
 	stay	= mkV "stay";
 	start_VV	= mkVV( mkV "start") ;
 	start_V2	= mkV2( mkV "start") noPrep;

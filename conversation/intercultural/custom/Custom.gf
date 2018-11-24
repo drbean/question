@@ -16,6 +16,8 @@ fun
 	really_ADA	: AdA;
 	late	: Adv_time;
 	later	: Adv_time;
+	late_ADV	: Adv;
+	for_a_while	: Adv_time;
 	even	: Adv;
 	even_V	: AdV;
 	at_first	: Adv_time;
@@ -103,7 +105,7 @@ fun
 	want	: VV;
 	travel	: V2;
 	think	: VS;
-	surprise	: V2S;
+	surprise	: V2Q;
 	stay	: V;
 	start_VV	: VV;
 	start_V2	: V2;
