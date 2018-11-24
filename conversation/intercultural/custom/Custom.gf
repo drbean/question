@@ -111,6 +111,7 @@ fun
 	show	: VS;
 	put	: V3;
 	make	: V2;
+	Live_in	: Place -> VP;
 	live	: V2;
 	like	: V2;
 	invite	: V3;

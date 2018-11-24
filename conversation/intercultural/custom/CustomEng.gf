@@ -3,7 +3,9 @@
 concrete CustomEng of Custom = MyConcrete  **
 open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude, (R=ResEng) in {
 
--- oper
+oper
+
+	live_V = mkV "live";
 
 lin
 
@@ -113,7 +115,8 @@ lin
 	show	= mkVS( mkV "show") ;
 	put	= mkV3 IrregEng.put_V noPrep over_LOCPREP;
 	make	= mkV2 IrregEng.make_V noPrep;
-	live	= mkV2( mkV "live") in_LOCPREP;
+	Live_in	place = WithPlace live_V ( Locating in_LOCPREP place );
+	live	= mkV2 live_V in_LOCPREP;
 	like	= mkV2( mkV "like") noPrep;
 	invite	= mkV3( mkV "invite") noPrep to_PREP;
 	have_to	= mkVV IrregEng.have_V ;
