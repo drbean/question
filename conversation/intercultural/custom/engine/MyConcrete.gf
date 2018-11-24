@@ -598,6 +598,7 @@ lin
 	-- VPClSlash	vpslash = mkClSlash vpslash;
 	FreeICl ip vp = myFreeICl ip vp;
 	FreeIClSlash ip cl = myFreeIClSlash ip cl;
+	IAdvAdv iadv adv	= mkIAdv iadv adv;
 	IAdvA iadv a = myIAdvA iadv a;
 	FreeInfICl iadv vp = myFreeInfICl iadv vp;
 	FreeInfCl vp	= myFreeInfCl vp;
