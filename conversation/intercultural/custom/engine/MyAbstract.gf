@@ -341,12 +341,12 @@ fun
 	who_WH	: IP;
 	what_WH	: IP;
 	what_WH_PL	: IP;
-	where_WH	: IP;
 	what_PL_IDET	: IDet;
 	which_SG_IDET	: IDet;
 	which_PL_IDET	: IDet;
 	how_WH	: IAdv;
 	why_WH	: IAdv;
+	where_WH	: IAdv;
 	who_RP	: RP;
 	that_RP	: RP;
 	in_which	: RP;
