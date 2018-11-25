@@ -771,6 +771,8 @@ lin
 
 	who_WH	= mymkIP "who" "who" "whose" Sg;
 	what_WH	= whatSg_IP;
+	what_WH_PL	= whatPl_IP;
+	where_WH	= where_IAdv;
 	what_PL_IDET = { s = "what"; n = Pl };
 	which_SG_IDET = { s = "which"; n = Sg };
 	which_PL_IDET = { s = "which"; n = Pl };
