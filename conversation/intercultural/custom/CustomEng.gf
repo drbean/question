@@ -6,6 +6,7 @@ open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude
 oper
 
 	live_V = mkV "live";
+	travel_V = mkV "travel";
 
 lin
 
@@ -107,6 +108,7 @@ lin
 	worry	= mkV2( mkV "worry") about_THEMEPREP;
 	wear	= mkV2 IrregEng.wear_V noPrep;
 	want	= mkVV( mkV "want") ;
+	Travel_in	place = WithPlace travel_V ( Locating in_LOCPREP place );
 	travel	= mkV2( mkV "travel") in_LOCPREP;
 	think	= mkVS IrregEng.think_V ;
 	surprise	= mkV2Q( mkV "surprise") at_THEMEPREP;

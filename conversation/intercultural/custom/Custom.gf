@@ -104,6 +104,7 @@ fun
 	wear	: V2;
 	want	: VV;
 	travel	: V2;
+	Travel_in	: Place -> VP;
 	think	: VS;
 	surprise	: V2Q;
 	stay	: V;
