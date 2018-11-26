@@ -209,6 +209,7 @@ fun
 	WHose	: CN -> IP;
 	IPhrase	: IDet -> CN -> IP;
 	WH_ClSlash	: IP -> ClSlash -> QCl;
+	IAdvComp	: IAdv -> NP -> QCl;
 	IAdvQCl	: IAdv -> Cl -> QCl;
 	IAdvInfICl	: IAdv -> VP -> QCl;
 	MkQS	: Tense -> Ant -> Pol -> QCl -> QS;

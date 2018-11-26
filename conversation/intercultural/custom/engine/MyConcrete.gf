@@ -645,6 +645,7 @@ lin
 	WHose cn = mkIP (GenIP who_WH) cn;
 	IPhrase idet cn = mymkIPhrase idet cn;
 	WH_ClSlash ip cslash	= mkQCl ip cslash;
+	IAdvComp iadv np	= mkQCl iadv np;
 	IAdvQCl iadv cl	= mkQCl iadv cl;
 	IAdvInfICl iadv vp	= myInfICl iadv vp;
 	MkQS t a p qcl = myMkQS t a p qcl;
