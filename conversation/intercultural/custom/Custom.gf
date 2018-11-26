@@ -106,6 +106,7 @@ fun
 	travel	: V2;
 	Travel_in	: Place -> VP;
 	think	: VS;
+	talk	: V;
 	surprise	: V2Q;
 	stay	: V;
 	start_VV	: VV;

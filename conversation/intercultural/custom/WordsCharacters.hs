@@ -210,7 +210,7 @@ start_V2	: V2;
 start_VV	: VV;
 stay	: V;
 surprise	: V2S;
-talking
+talk	: V;
 ten o’clock	: N;
 then	: Adv_time;
 thing

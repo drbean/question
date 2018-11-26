@@ -111,6 +111,7 @@ lin
 	Travel_in	place = WithPlace travel_V ( Locating in_LOCPREP place );
 	travel	= mkV2( mkV "travel") in_LOCPREP;
 	think	= mkVS IrregEng.think_V ;
+	talk	= mkV "talk";
 	surprise	= mkV2Q( mkV "surprise") at_THEMEPREP;
 	stay	= mkV "stay";
 	start_VV	= mkVV( mkV "start") ;

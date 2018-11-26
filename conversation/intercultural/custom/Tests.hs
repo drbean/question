@@ -103,7 +103,7 @@ dic_test = [
 	, "When you are invited to dinner, you are expected to come around nine o’clock, and you usually don’t start dinner until ten o’clock."
 	, "And people stay really late, sometimes until two o’clock in the morning or even later."
 	, "Nate found that difficult."
-	, "How do you get up to go to work the next day after talking until three o’clock in the morning?"
+	, "How do you get up to go to work the next day after eating and talking until three o’clock in the morning?"
 
 	, "One thing that Shauna had to get used to when she was traveling in South Korea was the way people make noise when they drink soup."
 	, "Shauna thinks it’s because they want to show that they’re really enjoying their food so they make a slurping noise."
