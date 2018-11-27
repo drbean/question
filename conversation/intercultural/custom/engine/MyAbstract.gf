@@ -134,14 +134,7 @@ fun
 	DetVPtoNP	: Det -> VP -> NP;
 	SubjGerund	: NP -> VP -> NP;
 	InfinitiveNP	: VP -> NP;
-	FactNP	: S -> NP;
-	WayNP	: S -> NP;
-	HowNP	: S -> NP;
-	WhenNP	: S -> NP;
-	WhetherNP	: S -> NP;
-	WhyNP	: S -> NP;
-	ThatNP	: S -> NP;
-	BecauseNP	: S -> NP;
+	FactNP,	WayNP, HowNP, WhenNP, WhetherNP, WhyNP, ThatNP, BecauseNP	: S -> NP;
 	WhatNP	: RS -> NP;
 	PartN	: V -> N;
 	Gerund	: VP -> NP;
