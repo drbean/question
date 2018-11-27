@@ -152,6 +152,7 @@ fun
 	FreeICl : IP -> VP -> NounCl;
 	FreeIClSlash : IP -> ClSlash -> NounCl;
 	IAdvAdv	: IAdv -> Adv -> IAdv;
+	IAdvAdv_time	: IAdv -> Adv_time -> IAdv;
 	IAdvA	: IAdv -> A -> IAdv;
 	FreeInfICl	: IAdv -> VP -> NounCl;
 	-- FreeInfCl	: VP -> NounCl;
