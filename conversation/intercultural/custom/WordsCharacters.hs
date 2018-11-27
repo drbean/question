@@ -201,6 +201,7 @@ secure	: AP;
 Shauna	: PN;
 show	: VS;
 slurp	: V;
+slurp_V2	: V2;
 so	: Subj;
 something
 sometimes	: Adv_time;

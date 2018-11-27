@@ -110,6 +110,7 @@ fun
 	stay	: V;
 	start_VV	: VV;
 	start_V2	: V2;
+	slurp_V2	: V2;
 	slurp	: V;
 	show	: VS;
 	put	: V3;

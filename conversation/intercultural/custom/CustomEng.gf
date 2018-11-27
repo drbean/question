@@ -115,6 +115,7 @@ lin
 	stay	= mkV "stay";
 	start_VV	= mkVV( mkV "start") ;
 	start_V2	= mkV2( mkV "start") noPrep;
+	slurp_V2	= mkV2( mkV "slurp") noPrep;
 	slurp	= mkV "slurp";
 	show	= mkVS( mkV "show") ;
 	put	= mkV3 IrregEng.put_V noPrep over_LOCPREP;
