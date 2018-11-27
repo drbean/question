@@ -105,7 +105,7 @@ dic_test = [
 	, "Nate found that difficult."
 	, "How do you get up to go to work the next day after eating and talking until three o’clock in the morning?"
 
-	, "One thing that Shauna had to get used to when she was traveling in South Korea was the way people make noise when they drink soup."
+	, "One thing that Shauna had to get used to when she was traveling in South Korea was the way that people make noise when they drink soup."
 	, "Shauna thinks it’s because they want to show that they’re really enjoying their food so they make a slurping noise."
 	, "It bothered Shauna at first, but then she got used to it."
 	, "She guesses it’s because when she was growing up, it wasn’t acceptable to make noise at the dinner table"
