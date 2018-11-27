@@ -5,3 +5,8 @@
 
 *.sw?
 *~
+Model.hs
+Interpretation.hs
+Translate.hs
+LogicalForm.hs
+Evaluation.hs
