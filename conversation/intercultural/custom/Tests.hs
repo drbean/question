@@ -99,7 +99,7 @@ dic_test = [
 	, "But after a while, Carla got used to it and she even started to like it."
 	, "You feel really secure, and you also don’t have to worry about what to wear all the time."
 
-	, "When Nate lived in Spain, he was surprised at how late in the evening people eat."
+	, "When Nate lived in Spain, it surprised him how late in the evening people eat."
 	, "When you are invited to dinner, you are expected to come around nine o’clock, and you usually don’t start dinner until ten o’clock."
 	, "And people stay really late, sometimes until two o’clock in the morning or even later."
 	, "Nate found that difficult."

@@ -16,7 +16,6 @@ fun
 	really_ADA	: AdA;
 	late	: Adv_time;
 	later	: Adv_time;
-	late_ADV	: Adv;
 	for_a_while	: Adv_time;
 	even	: Adv;
 	even_V	: AdV;
