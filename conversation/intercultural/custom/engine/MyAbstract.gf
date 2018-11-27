@@ -141,6 +141,7 @@ fun
 	WhetherNP	: S -> NP;
 	WhyNP	: S -> NP;
 	ThatNP	: S -> NP;
+	BecauseNP	: S -> NP;
 	WhatNP	: RS -> NP;
 	PartN	: V -> N;
 	Gerund	: VP -> NP;

@@ -589,6 +589,7 @@ lin
 	WhetherNP s	= myStoNP "whether" s;
 	WhyNP s	= myStoNP "why" s;
 	ThatNP s	= myStoNP "that" s;
+	BecauseNP s	= myStoNP "because" s;
 	WhatNP rs	= myRStoNP "what" rs;
 	PartN v	= myPartN v;
 	Gerund vp = GerundNP vp;
