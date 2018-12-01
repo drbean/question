@@ -82,6 +82,7 @@ fun
 	over_LOCPREP	: LocPrep;
 	in_TIMEPREP	: TimePrep;
 	in_LOCPREP	: LocPrep;
+	from_LOCPREP	: LocPrep;
 	for_TIMEPREP	: TimePrep;
 	at_LOCPREP	: LocPrep;
 	around_TIMEPREP	: TimePrep;

@@ -158,6 +158,7 @@ feel	: VA;
 food	: N;
 for_TIMEPREP	: TimePrep;
 for a while	: Adv_time;
+from_LOCPREP	: LocPrep;
 find_NP	: V3;
 find_AP	: V2A;
 get up	: V;

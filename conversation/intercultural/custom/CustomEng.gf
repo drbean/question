@@ -87,6 +87,7 @@ lin
 	over_LOCPREP	= mkPrep "over";
 	in_TIMEPREP	= mkPrep "in";
 	in_LOCPREP	= mkPrep "in";
+	from_LOCPREP	= mkPrep "from";
 	for_TIMEPREP	= mkPrep "for";
 	at_LOCPREP	= mkPrep "at";
 	around_TIMEPREP	= mkPrep "around";
