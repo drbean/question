@@ -74,7 +74,7 @@ fun
 	Instrumenting	: InstrumentPrep -> NP -> Adv_instrument;
 	Themeing	: ThemePrep -> NP -> Adv_theme;
 	Mannering	: MannerPrep -> NP -> Adv_manner;
-	Timing		: TimePrep -> NP -> Adv_time;
+	Timing		: TimePrep -> Time -> Adv_time;
 	Sourcing		: SourcePrep -> NP -> Adv_source;
 	Resulting		: ResultPrep -> NP -> Adv_result;
 	Patienting		: PatientPrep -> NP -> Adv_patient;
