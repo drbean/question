@@ -592,7 +592,7 @@ lin
 	BecauseNP s	= myStoNP "because" s;
 	WhatNP rs	= myRStoNP "what" rs;
 	PartN v	= myPartN v;
-	Gerund vp = GerundNP vp;
+	Gerund vp = GerundCN vp;
 	GerundSlash vp = GerundCN vp;
 	ByGerund vp = ByVP vp;
 	SClSlash	np vpslash = mkClSlash np vpslash;

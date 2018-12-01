@@ -137,7 +137,7 @@ fun
 	FactNP,	WayNP, HowNP, WhenNP, WhetherNP, WhyNP, ThatNP, BecauseNP	: S -> NP;
 	WhatNP	: RS -> NP;
 	PartN	: V -> N;
-	Gerund	: VP -> NP;
+	Gerund	: VP -> CN;
 	GerundSlash	: VPSlash -> CN;
 	ByGerund : VP -> Adv_manner;
 	PredAPVP	: AP -> VP -> Cl;
