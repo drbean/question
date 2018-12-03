@@ -133,16 +133,10 @@ fun
 	DetVPtoNP	: Det -> VP -> NP;
 	SubjGerund	: NP -> VP -> NP;
 	InfinitiveNP	: VP -> NP;
-	FactNP	: S -> NP;
-	WayNP	: S -> NP;
-	HowNP	: S -> NP;
-	WhenNP	: S -> NP;
-	WhetherNP	: S -> NP;
-	WhyNP	: S -> NP;
-	ThatNP	: S -> NP;
+	FactNP,	WayNP, HowNP, WhenNP, WhetherNP, WhyNP, ThatNP, BecauseNP	: S -> NP;
 	WhatNP	: RS -> NP;
 	PartN	: V -> N;
-	Gerund	: VP -> NP;
+	Gerund	: VP -> CN;
 	GerundSlash	: VPSlash -> CN;
 	ByGerund : VP -> Adv_manner;
 	PredAPVP	: AP -> VP -> Cl;
@@ -150,6 +144,8 @@ fun
 	-- VPClSlash	: VPSlash -> ClSlash;
 	FreeICl : IP -> VP -> NounCl;
 	FreeIClSlash : IP -> ClSlash -> NounCl;
+	IAdvAdv	: IAdv -> Adv -> IAdv;
+	IAdvAdv_time	: IAdv -> Adv_time -> IAdv;
 	IAdvA	: IAdv -> A -> IAdv;
 	FreeInfICl	: IAdv -> VP -> NounCl;
 	-- FreeInfCl	: VP -> NounCl;
@@ -207,6 +203,7 @@ fun
 	WHose	: CN -> IP;
 	IPhrase	: IDet -> CN -> IP;
 	WH_ClSlash	: IP -> ClSlash -> QCl;
+	IAdvComp	: IAdv -> NP -> QCl;
 	IAdvQCl	: IAdv -> Cl -> QCl;
 	IAdvInfICl	: IAdv -> VP -> QCl;
 	MkQS	: Tense -> Ant -> Pol -> QCl -> QS;
@@ -224,8 +221,8 @@ fun
 	Sentence	: NP -> VP -> Cl;
 	Exist	: NP -> Cl;
 
-	Yes, No, NoAnswer	: Utt;
-	Answer : NP -> Utt;
+	-- Yes, No, NoAnswer	: Utt;
+	-- Answer : NP -> Utt;
 
 	Inject	: Interj -> SC;
 
@@ -236,10 +233,12 @@ fun
 	KindOfKind  : CN -> Adv -> CN;
 	MassKindOfKind  : N -> Adv -> N;
 	KindInTime  : CN -> Adv_time -> CN;
+	MassKindInTime  : N -> Adv_time -> N;
 	KindOfTime	: AP -> Time -> Time;
 	TimeInTime  : Time -> Adv_time -> Time;
 	TimeAsAdv	: Det -> Time -> Adv_time;
 	TimeAsAdvWithPredet	: Predet -> Det -> Time -> Adv_time;
+	AdvTime	: Adv -> Adv_time -> Adv_time;
 	KindInPlace	: CN -> Adv_location -> CN;
 	NPInPlace	: NP -> Adv_location -> NP;
 	PlaceKind	: AP -> PlaceNoun -> PlaceNoun;
@@ -308,6 +307,9 @@ fun
 	Adv_resultList : Adv_result -> Adv_result -> ListAdv_result;
 	AddAdv_result : Adv_result -> ListAdv_result -> ListAdv_result;
 	CloseAdv_result	: Conj -> ListAdv_result -> Adv_result;
+	Adv_timeList : Adv_time -> Adv_time -> ListAdv_time;
+	AddAdv_time : Adv_time -> ListAdv_time -> ListAdv_time;
+	CloseAdv_time	: Conj -> ListAdv_time -> Adv_time;
 	ConcatS	: Conj -> S -> S -> S;
 	PreConjUtt	: Conj -> Utt -> Utt;
 
@@ -333,11 +335,13 @@ fun
 
 	who_WH	: IP;
 	what_WH	: IP;
+	what_WH_PL	: IP;
 	what_PL_IDET	: IDet;
 	which_SG_IDET	: IDet;
 	which_PL_IDET	: IDet;
 	how_WH	: IAdv;
 	why_WH	: IAdv;
+	where_WH	: IAdv;
 	who_RP	: RP;
 	that_RP	: RP;
 	in_which	: RP;

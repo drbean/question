@@ -50,6 +50,7 @@ lincat
 	Partitive = Det;
 	ListAdv_manner	= ListAdv;
 	ListAdv_result	= ListAdv;
+	ListAdv_time	= ListAdv;
 
 param
   Auxiliary	= Do | Be | Should;
@@ -286,9 +287,9 @@ oper
 
 
 	myDetVPtoNP : (det : Det) -> (vp : VP) -> { s : NPCase => Str ; a : Agr} = 
-		\det,vp -> let nom = det.s ++ (EmbedPresPart vp).s ! AgP3Pl Masc ;
+		\det,vp -> let nom = det.s ++ (EmbedPresPart vp).s ! AgP3Sg Neutr ;
 								gen = glue nom "'s";
-								agreement = toAgr det.n P3 Masc in {
+								agreement = toAgr Sg P3 Neutr in {
 			s = table {
 				NCase Nom => nom;
 				NCase Gen => gen;
@@ -523,7 +524,7 @@ lin
 	Instrumenting prep instrument = mkAdv prep instrument;
 	Themeing prep instrument = mkAdv prep instrument;
 	Mannering prep style = mkAdv prep style;
-	Timing prep time = mkAdv prep time;
+	Timing prep det time = mkAdv prep (Item det time);
 	Sourcing prep source = mkAdv prep source;
 	Resulting prep result = mkAdv prep result;
 	Patienting prep result = mkAdv prep result;
@@ -588,15 +589,17 @@ lin
 	WhetherNP s	= myStoNP "whether" s;
 	WhyNP s	= myStoNP "why" s;
 	ThatNP s	= myStoNP "that" s;
+	BecauseNP s	= myStoNP "because" s;
 	WhatNP rs	= myRStoNP "what" rs;
 	PartN v	= myPartN v;
-	Gerund vp = GerundNP vp;
+	Gerund vp = GerundCN vp;
 	GerundSlash vp = GerundCN vp;
 	ByGerund vp = ByVP vp;
 	SClSlash	np vpslash = mkClSlash np vpslash;
 	-- VPClSlash	vpslash = mkClSlash vpslash;
 	FreeICl ip vp = myFreeICl ip vp;
 	FreeIClSlash ip cl = myFreeIClSlash ip cl;
+	IAdvAdv, IAdvAdv_time	= \iadv,adv	-> mkIAdv iadv adv;
 	IAdvA iadv a = myIAdvA iadv a;
 	FreeInfICl iadv vp = myFreeInfICl iadv vp;
 	FreeInfCl vp	= myFreeInfCl vp;
@@ -643,6 +646,7 @@ lin
 	WHose cn = mkIP (GenIP who_WH) cn;
 	IPhrase idet cn = mymkIPhrase idet cn;
 	WH_ClSlash ip cslash	= mkQCl ip cslash;
+	IAdvComp iadv np	= mkQCl iadv np;
 	IAdvQCl iadv cl	= mkQCl iadv cl;
 	IAdvInfICl iadv vp	= myInfICl iadv vp;
 	MkQS t a p qcl = myMkQS t a p qcl;
@@ -660,10 +664,10 @@ lin
 	Sentence subject predicate	= mkCl subject predicate;
 	Exist np = mkCl np;
 
-	Yes	= yes_Utt;
-	No	= no_Utt;
-	NoAnswer	= ss "No answer";
-	Answer np = mkUtt np;
+	-- Yes	= yes_Utt;
+	-- No	= no_Utt;
+	-- NoAnswer	= ss "No answer";
+	-- Answer np = mkUtt np;
 
 	Inject i = mkSC( mkUtt i);
 
@@ -674,10 +678,12 @@ lin
 	KindOfKind cn adv	= myAdvCN cn adv;
 	MassKindOfKind n adv	= mymkN_Adv n adv;
 	KindInTime cn adv	= myAdvCN cn adv;
+	MassKindInTime n adv	= mymkN_Adv n adv;
 	KindOfTime adj cn	= mkCN adj cn;
 	TimeInTime cn adv = myAdvCN cn adv;
 	TimeAsAdv det cn = mkAdv P.noPrep (mkNP det cn);
 	TimeAsAdvWithPredet predet det cn = mkAdv P.noPrep (mkNP predet (mkNP det cn) );
+	AdvTime adv time	= ParadigmsEng.mkAdv (adv.s ++ time.s);
 	KindInPlace cn adv	= myAdvCN cn adv;
 	NPInPlace np adv = mkNP np adv;
 	PlaceKind ap n = mkCN ap n;
@@ -741,15 +747,9 @@ lin
 	APList np1 np2 = mkListAP np1 np2;
 	AddAP ap list = mkListAP ap list;
 	CloseAP conj list = mkAP conj list;
-	AdvList np1 np2 = mkListAdv np1 np2;
-	AddAdv ap list = mkListAdv ap list;
-	CloseAdv conj list = mkAdv conj list;
-	Adv_mannerList np1 np2 = mkListAdv np1 np2;
-	AddAdv_manner ap list = mkListAdv ap list;
-	CloseAdv_manner conj list = mkAdv conj list;
-	Adv_resultList adv1 adv2 = mkListAdv adv1 adv2;
-	AddAdv_result adv list = mkListAdv adv list;
-	CloseAdv_result conj list = mkAdv conj list;
+	AdvList, Adv_mannerList, Adv_resultList, Adv_timeList	= \adv1,adv2 -> mkListAdv adv1 adv2;
+	AddAdv, AddAdv_manner, AddAdv_result, AddAdv_time	= \ adv,list -> mkListAdv adv list;
+	CloseAdv, CloseAdv_manner, CloseAdv_result, CloseAdv_time	= \conj,list -> mkAdv conj list;
 	ConcatS	conj s1 s2 = mkS conj s1 s2;
 	PreConjUtt conj utt = mkPhr (mkPConj conj) utt;
 
@@ -773,11 +773,13 @@ lin
 
 	who_WH	= mymkIP "who" "who" "whose" Sg;
 	what_WH	= whatSg_IP;
+	what_WH_PL	= whatPl_IP;
 	what_PL_IDET = { s = "what"; n = Pl };
 	which_SG_IDET = { s = "which"; n = Sg };
 	which_PL_IDET = { s = "which"; n = Pl };
 	how_WH	= how_IAdv;
   why_WH	= why_IAdv;
+	where_WH	= where_IAdv;
   that_RP =
      { s = table {
         RC _ (NCase Gen) | RC _ NPNomPoss => "whose" ;
