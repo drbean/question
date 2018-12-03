@@ -289,7 +289,7 @@ oper
 	myDetVPtoNP : (det : Det) -> (vp : VP) -> { s : NPCase => Str ; a : Agr} = 
 		\det,vp -> let nom = det.s ++ (EmbedPresPart vp).s ! AgP3Sg Neutr ;
 								gen = glue nom "'s";
-								agreement = toAgr det.n P3 Neutr in {
+								agreement = toAgr Sg P3 Neutr in {
 			s = table {
 				NCase Nom => nom;
 				NCase Gen => gen;
