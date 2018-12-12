@@ -1,4 +1,4 @@
-module Evaluation (readPGF, languages, buildMorpho, morphoMissing, term2ref, drsRefs, xyzwp, var_e, unmaybe, rep, parses, drsToLF, linear, showExpr, transform) where
+module Evaluation (readPGF, languages, buildMorpho, morphoMissing, term2ref, drsRefs, xyzwp, var_e, unmaybe, rep, drsToLF, linear, showExpr, transform) where
 
 import PGF2
 import Data.DRS hiding (Or,Neg,Imp,Rel)
@@ -7,12 +7,19 @@ import Translate
 import LogicalForm
 import Interpretation
 import Model
+import Utility (lc_first, chomp, leading_space, be_morphology)
 
 import Data.Maybe
 import Control.Monad
 
+import GHC.IO.Handle
+import System.IO
+
+import System.Environment.FindBin
+
 import Data.List
 import Data.Char
+import qualified Data.Map as Map
 
 --type FInterp = String -> [Entity] -> Entity
 --
@@ -102,19 +109,25 @@ bigN xs = not . smallN $ xs
 
 -- used by both Transfer, Tests
 
-parses :: PGF -> String -> [ParseOutput]
-parses gr s = concat ( parseAll gr (startCat gr) s )
+-- parse :: PGF -> String -> [ParseOutput]
+parse = do
+	path <- getProgPath
+	gr <- readPGF ( path ++ "/Tenant.pgf" )
+	let Just eng = Map.lookup "TenantEng" (languages gr)
+	let morpho = map fst (fullFormLexicon eng) ++ be_morphology
+	hClose stderr
+	hDuplicateTo stdout stderr
 
-transform :: Tree -> Maybe Tree
+-- transform :: Tree -> Maybe Tree
 transform = gfmaybe <=< answer . fg
 
-gfmaybe :: GUtt -> Maybe Tree
+-- gfmaybe :: GUtt -> Maybe Tree
 gfmaybe (GYes) = Just (gf GYes)
 gfmaybe (GNo) = Just (gf GNo)
 gfmaybe (GAnswer x) = Just (gf (GAnswer x))
 gfmaybe _ = Nothing
 
-rep :: Tree -> Maybe (DRSRef -> DRS)
+-- rep :: Tree -> Maybe (DRSRef -> DRS)
 rep x =  (repS . fg) x
 
 answer :: GUtt -> Maybe GUtt
@@ -157,11 +170,5 @@ answer	utt@(GQUt _) = case (evalW . drsToLF) (((unmaybe . repS) utt) (DRSRef "r1
 	(Just [x,y,z]) -> Just (GAnswer (GCloseList Gor_CONJ (GAddList (GEntity (ent2gent x)) (GList (GEntity (ent2gent y)) (GEntity (ent2gent z))))))
 	(Just [x,y,z,w]) -> Nothing
 	otherwise	-> Nothing
-
-linear :: PGF -> Tree -> Maybe String
-linear gr p = Just (linearize gr (myLanguage gr) p)
-
-myLanguage gr = (head . languages) gr
-
 
 -- vim: set ts=2 sts=2 sw=2 noet:
