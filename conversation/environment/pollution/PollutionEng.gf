@@ -1,7 +1,7 @@
 --# -path=.:./engine:/home/drbean/GF/lib/src/translator:alltenses 
 
 concrete PollutionEng of Pollution = MyConcrete  **
-open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ExtraEng, ConstructX, Prelude, (R=ResEng) in {
+open ConstructorsEng, ParadigmsEng, StructuralEng, IrregEng, ConstructX, Prelude, (R=ResEng) in {
 
 oper
 	pump	= mkV2( mkV "pump") noPrep;
