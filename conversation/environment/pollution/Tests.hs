@@ -119,6 +119,9 @@ dic_test = [
 	, "The growth of suburbs has eaten up huge amounts of farmland."
 	, "The destruction of rain forests is accelerating the extinction of plants and wildlife."
 
+	, "High emissions of carbon dioxide are causing climate changes."
+	, "Rapid urbanization is depleting our natural resources."
+	, "Water pollution has threatened the health of people all over the world."
 
   ]
 
