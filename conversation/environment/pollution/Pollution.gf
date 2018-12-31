@@ -18,7 +18,7 @@ fun
 	environmental	: AP;
 	dead	: AP;
 	bad	: AP;
-	avox	: AP;
+	green_mission	: AP;
 
 -- Conj
 
@@ -73,9 +73,9 @@ fun
 
 -- PN
 
-	carla	: PN;
-	avox_industries	: PN;
-	andy	: PN;
+	otis	: PN;
+	green_mission_industries	: PN;
+	cindy	: PN;
 
 -- Prep
 

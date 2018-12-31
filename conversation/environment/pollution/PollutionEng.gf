@@ -23,7 +23,7 @@ lin
 	environmental	= mkAP( mkA "environmental") ;
 	dead	= mkAP( mkA "dead") ;
 	bad	= mkAP( mkA "bad") ;
-	avox	= mkAP( mkA "Avox") ;
+	green_mission	= mkAP( mkA "Green Mission") ;
 
 -- Conj
 
@@ -78,9 +78,9 @@ lin
 
 -- PN
 
-	carla	= mkPN( mkN feminine (mkN "Carla") );
-	avox_industries	= mkPN( mkN nonhuman (mkN "Avox Industries") );
-	andy	= mkPN( mkN masculine (mkN "Andy") );
+	otis	= mkPN( mkN masculine (mkN "Otis") );
+	green_mission_industries	= mkPN( mkN nonhuman (mkN "Green Mission Industries") );
+	cindy	= mkPN( mkN feminine (mkN "Cindy") );
 
 -- Prep
 
