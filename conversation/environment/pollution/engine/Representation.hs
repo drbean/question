@@ -1,9 +1,9 @@
-module Representation (module Representation, module Communication) where
+module Representation (module Representation, module Pollution) where
 
 import Data.DRS
 import Data.DRS.Show
 
-import Communication
+import Pollution
 import PGF2
 
 import Model
