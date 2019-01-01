@@ -7,9 +7,13 @@ fun
 
 -- Adv
 
+	all_over_the_world	: Adv_location;
 
 -- AP
 
+	rapid	: AP;
+	natural	: AP;
+	high	: AP;
 	urban	: AP;
 	underground	: AP;
 	terrible	: AP;
@@ -30,6 +34,12 @@ fun
 
 -- N
 
+	urbanization	: N;
+	resources	: CN;
+	emissions	: N;
+	climate	: CN;
+	change_CN	: CN;
+	carbon_dioxide	: N;
 	farm	: CN;
 	livestock_farm	: CN;
 	wildlife	: N;
@@ -79,6 +89,11 @@ fun
 
 -- Prep
 
+	as_a_result_of_CAUSERPREP	: CauserPrep;
+	because_of_CAUSERPREP	: CauserPrep;
+	due_to_CAUSERPREP	: CauserPrep;
+	through_CAUSERPREP	: CauserPrep;
+	by_CAUSERPREP	: CauserPrep;
 	to	: Prep;
 	outside	: LocPrep;
 	on	: ThemePrep;
@@ -97,6 +112,8 @@ fun
 
 -- V
 
+	deplete	: V2;
+	cause	: V2;
 	work	: V;
 	threaten	: V2;
 	think	: VS;
@@ -114,7 +131,7 @@ fun
 	get	: V2V;
 	erode	: V2;
 	eat_up	: V2;
-	Do	: NP -> NP -> VP;
+	Do_V3	: NP -> NP -> VP;
 	Do_about	: NP -> VPSlash;
 	Do_	: NP -> VPSlash;
 	contaminate	: V2;

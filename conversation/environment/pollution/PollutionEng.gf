@@ -12,9 +12,13 @@ lin
 
 -- Adv
 
+	all_over_the_world	= ParadigmsEng.mkAdv "all over the world";
 
 -- AP
 
+	rapid	= mkAP( mkA "rapid") ;
+	natural	= mkAP( mkA "natural") ;
+	high	= mkAP( mkA "high") ;
 	urban	= mkAP( mkA "urban") ;
 	underground	= mkAP( mkA "underground") ;
 	terrible	= mkAP( mkA "terrible") ;
@@ -35,6 +39,12 @@ lin
 
 -- N
 
+	urbanization	= mkN "urbanization" nonExist;
+	resources	= mkCN( mkN nonhuman (mkN "resource") );
+	emissions	= mkN nonExist "emissions";
+	climate	= mkCN( mkN nonhuman (mkN "climate") );
+	change_CN	= mkCN( mkN nonhuman (mkN "change") );
+	carbon_dioxide	= mkN "carbon dioxide" nonExist;
 	farm	= mkCN( mkN nonhuman (mkN "farm") );
 	livestock_farm	= mkCN( mkN nonhuman (mkN "livestock farm") );
 	wildlife	= mkN "wildlife" nonExist;
@@ -84,6 +94,11 @@ lin
 
 -- Prep
 
+	as_a_result_of_CAUSERPREP	= mkPrep "as a result of";
+	because_of_CAUSERPREP	= mkPrep "because of";
+	due_to_CAUSERPREP	= mkPrep "due to";
+	through_CAUSERPREP	= mkPrep "through";
+	by_CAUSERPREP	= mkPrep "by";
 	to	= mkPrep "to";
 	outside	= mkPrep "outside";
 	on	= mkPrep "on";
@@ -102,6 +117,8 @@ lin
 
 -- V
 
+	deplete	= mkV2( mkV "deplete") noPrep;
+	cause	= mkV2( mkV "cause") noPrep;
 	work	= mkV "work";
 	threaten	= mkV2( mkV "threaten" "threatened") noPrep;
 	think	= mkVS( mkV "think") ;
@@ -119,7 +136,7 @@ lin
 	get	= mkV2V( mkV "get") noPrep to;
 	erode	= mkV2( mkV "erode") noPrep;
 	eat_up	= mkV2( partV( IrregEng.eat_V ) "up");
-	Do np1 np2 = V_NP_NP do_about np1 np2;
+	Do_V3 np1 np2 = V_NP_NP do_about np1 np2;
 	Do_about np2 = V3Slash1 do_about np2;
 	Do_ np1 = V3Slash do_about np1;
 	contaminate	= mkV2( mkV "contaminate") noPrep;

@@ -210,6 +210,29 @@ way	: N2;
 wildlife	: N;
 work	: V;
 
+by_CAUSERPREP	: CauserPrep;
+through_CAUSERPREP	: CauserPrep;
+due to_CAUSERPREP	: CauserPrep;
+because of_CAUSERPREP	: CauserPrep;
+as a result of_CAUSERPREP	: CauserPrep;
+
+
+all over the world	: Adv_location;
+carbon dioxide	: N;
+cause	: V2;
+change	: CN;
+change	: V2;
+climate	: CN;
+deplete	: V2;
+emissions	: N;
+health	: N;
+high	: AP;
+natural	: AP;
+rapid	: AP;
+resource	: CN;
+threaten	: V2;
+urbanization	: N;
+
 -}
 
 -- vim: set ts=2 sts=2 sw=2 noet:
