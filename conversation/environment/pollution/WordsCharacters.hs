@@ -8,7 +8,7 @@ import System.Environment.FindBin
 -- path = getProgPath
 -- file = path >>= \p -> return ( (++) p "/Happier.pgf")
 -- gr = file >>= \f -> return ( readPGF f )
-gr = readPGF "/home/drbean/GF/gf-contrib/drbean/conversation/environment/pollution/Pollution.pgf"
+gr = readPGF "/home/drbean/GF/question/conversation/environment/pollution/Pollution.pgf"
 
 cat2funs :: String -> IO [CId]
 cat2funs cat = do
@@ -30,6 +30,7 @@ gfWords = [
 	, ("PN",pn)
 	, ("Pron",pron)
 	, ("Prep",prep)
+	, ("CauserPrep",prep_causal)
 	-- , ("Rel",rel)
 	, ("Tag",tag)
 	, ("V",v)
@@ -51,6 +52,7 @@ posName "CN"	= "Count Noun"
 posName "PN"	= "Proper Noun"
 posName "Pron"	= "Pronoun"
 posName "Prep"	= "Preposition"
+posName "CauserPrep"	= "Preposition (Causal)"
 posName "Rel"	= "Relative Pronoun"
 posName "Tag"	= "Question Tag"
 posName "V"	= "Verb"
@@ -70,6 +72,7 @@ n	= cat2funs "N"
 cn	= cat2funs "CN"
 pn	= cat2funs "PN"
 prep	= cat2funs "Prep"
+prep_causal	= cat2funs "CauserPrep"
 pron	= cat2funs "NP"
 v	= cat2funs "V"
 v2	= cat2funs "V2"
