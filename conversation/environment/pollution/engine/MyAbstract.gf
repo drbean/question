@@ -10,7 +10,7 @@ cat
 	PlaceNoun;
 	AttributePrep;
 	BeneficiaryPrep;
-	CausePrep;
+	CauserPrep;
 	CoagentPrep;
 	CopatientPrep;
 	ExtentPrep;
@@ -87,7 +87,7 @@ fun
 	Benefiting	: BeneficiaryPrep -> NP -> Adv_beneficiary;
 	Receiving	: RecipientPrep -> NP -> Adv_recipient;
 	Trajectoring	: TrajectoryPrep -> NP -> Adv_trajectory;
-	Causing	: CausePrep -> NP -> Adv_cause;
+	Causing	: CauserPrep -> NP -> Adv_cause;
 	Valuing	: ValuePrep -> NP -> Adv_value;
 	V_	: V -> VP ;
 	V_NP	: V2 -> NP -> VP;

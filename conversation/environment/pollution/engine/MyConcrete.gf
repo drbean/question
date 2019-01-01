@@ -25,7 +25,7 @@ lincat
 	BeneficiaryPrep	= Prep;
 	RecipientPrep	= Prep;
 	TrajectoryPrep	= Prep;
-	CausePrep	= Prep;
+	CauserPrep	= Prep;
 	Adv_coagent	= Adv;
 	Adv_instrument	= Adv;
 	Adv_theme	= Adv;
@@ -52,8 +52,8 @@ lincat
 	ListAdv_result	= ListAdv;
 	ListAdv_time	= ListAdv;
 
--- param
-  -- Auxiliary	= Do | Be | Should;
+param
+  Auxiliary	= Do | Be | Should;
 	-- VPs = Look_bad | Be_bad | Be_vp | Happening | Changing | Causative | Intens | Positing | Informing | Triangulating | Pred2A | Pass | ToPlace | WithPlace | WithStyle | WithCl ;
 
 
