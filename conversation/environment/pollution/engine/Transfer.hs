@@ -1,7 +1,7 @@
 module Main where
 
 import PGF2
-import Summer
+import Pollution
 import Utility (lc_first, chomp, leading_space, be_morphology)
 import LogicalForm hiding ((==))
 -- import Evaluation
